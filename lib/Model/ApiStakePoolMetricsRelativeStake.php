@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanowallet
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace melmccann\cardanowallet\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \melmccann\cardanowallet\ObjectSerializer;
 
 /**
  * ApiStakePoolMetricsRelativeStake Class Doc Comment
  *
  * @category Class
  * @description The pools stake compared to the stake of all pools.
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanowallet
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */

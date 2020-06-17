@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanowallet
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace melmccann\cardanowallet\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \melmccann\cardanowallet\ObjectSerializer;
 
 /**
  * WalletsTip Class Doc Comment
  *
  * @category Class
  * @description A reference to a particular block.
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanowallet
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -60,7 +60,7 @@ class WalletsTip implements ModelInterface, ArrayAccess
     protected static $openAPITypes = [
         'slot_number' => 'int',
         'epoch_number' => 'int',
-        'height' => '\OpenAPI\Client\Model\WalletsTipHeight'
+        'height' => '\melmccann\cardanowallet\Model\WalletsTipHeight'
     ];
 
     /**
@@ -295,7 +295,7 @@ class WalletsTip implements ModelInterface, ArrayAccess
     /**
      * Gets height
      *
-     * @return \OpenAPI\Client\Model\WalletsTipHeight
+     * @return \melmccann\cardanowallet\Model\WalletsTipHeight
      */
     public function getHeight()
     {
@@ -305,7 +305,7 @@ class WalletsTip implements ModelInterface, ArrayAccess
     /**
      * Sets height
      *
-     * @param \OpenAPI\Client\Model\WalletsTipHeight $height height
+     * @param \melmccann\cardanowallet\Model\WalletsTipHeight $height height
      *
      * @return $this
      */

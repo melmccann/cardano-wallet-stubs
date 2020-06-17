@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanowallet
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,7 +27,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace OpenAPI\Client;
+namespace melmccann\cardanowallet;
 
 use PHPUnit\Framework\TestCase;
 
@@ -36,7 +36,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description Estimated synchronization progress of the node with the underlying network. Note that this may change quite arbitrarily as the node may switch to shorter or longer chain forks.
- * @package     OpenAPI\Client
+ * @package     melmccann\cardanowallet
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */

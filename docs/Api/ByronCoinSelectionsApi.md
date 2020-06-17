@@ -1,4 +1,4 @@
-# OpenAPI\Client\ByronCoinSelectionsApi
+# melmccann\cardanowallet\ByronCoinSelectionsApi
 
 All URIs are relative to *https://localhost:8090/v2*
 
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 ## byronSelectCoins
 
-> \OpenAPI\Client\Model\InlineResponse2004 byronSelectCoins($wallet_id, $inline_object13)
+> \melmccann\cardanowallet\Model\InlineResponse2004 byronSelectCoins($wallet_id, $inline_object13)
 
 Random
 
@@ -23,13 +23,13 @@ Random
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new OpenAPI\Client\Api\ByronCoinSelectionsApi(
+$apiInstance = new melmccann\cardanowallet\Api\ByronCoinSelectionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $wallet_id = 'wallet_id_example'; // string | 
-$inline_object13 = new \OpenAPI\Client\Model\InlineObject13(); // \OpenAPI\Client\Model\InlineObject13 | 
+$inline_object13 = new \melmccann\cardanowallet\Model\InlineObject13(); // \melmccann\cardanowallet\Model\InlineObject13 | 
 
 try {
     $result = $apiInstance->byronSelectCoins($wallet_id, $inline_object13);
@@ -46,11 +46,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **wallet_id** | **string**|  |
- **inline_object13** | [**\OpenAPI\Client\Model\InlineObject13**](../Model/InlineObject13.md)|  |
+ **inline_object13** | [**\melmccann\cardanowallet\Model\InlineObject13**](../Model/InlineObject13.md)|  |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\InlineResponse2004**](../Model/InlineResponse2004.md)
+[**\melmccann\cardanowallet\Model\InlineResponse2004**](../Model/InlineResponse2004.md)
 
 ### Authorization
 

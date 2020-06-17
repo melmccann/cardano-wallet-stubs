@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**active** | [**\OpenAPI\Client\Model\WalletsDelegationActive**](WalletsDelegationActive.md) |  | 
-**next** | [**\OpenAPI\Client\Model\WalletsDelegationNext[]**](WalletsDelegationNext.md) |  | 
+**active** | [**\melmccann\cardanowallet\Model\WalletsDelegationActive**](WalletsDelegationActive.md) |  | 
+**next** | [**\melmccann\cardanowallet\Model\WalletsDelegationNext[]**](WalletsDelegationNext.md) |  | 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 

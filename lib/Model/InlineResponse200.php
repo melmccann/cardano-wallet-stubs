@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanowallet
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace melmccann\cardanowallet\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \melmccann\cardanowallet\ObjectSerializer;
 
 /**
  * InlineResponse200 Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanowallet
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -59,12 +59,12 @@ class InlineResponse200 implements ModelInterface, ArrayAccess
     protected static $openAPITypes = [
         'id' => 'string',
         'address_pool_gap' => 'int',
-        'balance' => '\OpenAPI\Client\Model\WalletsBalance',
-        'delegation' => '\OpenAPI\Client\Model\WalletsDelegation',
+        'balance' => '\melmccann\cardanowallet\Model\WalletsBalance',
+        'delegation' => '\melmccann\cardanowallet\Model\WalletsDelegation',
         'name' => 'string',
-        'passphrase' => '\OpenAPI\Client\Model\WalletsPassphrase',
-        'state' => '\OpenAPI\Client\Model\WalletsState',
-        'tip' => '\OpenAPI\Client\Model\WalletsTip'
+        'passphrase' => '\melmccann\cardanowallet\Model\WalletsPassphrase',
+        'state' => '\melmccann\cardanowallet\Model\WalletsState',
+        'tip' => '\melmccann\cardanowallet\Model\WalletsTip'
     ];
 
     /**
@@ -357,7 +357,7 @@ class InlineResponse200 implements ModelInterface, ArrayAccess
     /**
      * Gets balance
      *
-     * @return \OpenAPI\Client\Model\WalletsBalance
+     * @return \melmccann\cardanowallet\Model\WalletsBalance
      */
     public function getBalance()
     {
@@ -367,7 +367,7 @@ class InlineResponse200 implements ModelInterface, ArrayAccess
     /**
      * Sets balance
      *
-     * @param \OpenAPI\Client\Model\WalletsBalance $balance balance
+     * @param \melmccann\cardanowallet\Model\WalletsBalance $balance balance
      *
      * @return $this
      */
@@ -381,7 +381,7 @@ class InlineResponse200 implements ModelInterface, ArrayAccess
     /**
      * Gets delegation
      *
-     * @return \OpenAPI\Client\Model\WalletsDelegation
+     * @return \melmccann\cardanowallet\Model\WalletsDelegation
      */
     public function getDelegation()
     {
@@ -391,7 +391,7 @@ class InlineResponse200 implements ModelInterface, ArrayAccess
     /**
      * Sets delegation
      *
-     * @param \OpenAPI\Client\Model\WalletsDelegation $delegation delegation
+     * @param \melmccann\cardanowallet\Model\WalletsDelegation $delegation delegation
      *
      * @return $this
      */
@@ -436,7 +436,7 @@ class InlineResponse200 implements ModelInterface, ArrayAccess
     /**
      * Gets passphrase
      *
-     * @return \OpenAPI\Client\Model\WalletsPassphrase|null
+     * @return \melmccann\cardanowallet\Model\WalletsPassphrase|null
      */
     public function getPassphrase()
     {
@@ -446,7 +446,7 @@ class InlineResponse200 implements ModelInterface, ArrayAccess
     /**
      * Sets passphrase
      *
-     * @param \OpenAPI\Client\Model\WalletsPassphrase|null $passphrase passphrase
+     * @param \melmccann\cardanowallet\Model\WalletsPassphrase|null $passphrase passphrase
      *
      * @return $this
      */
@@ -460,7 +460,7 @@ class InlineResponse200 implements ModelInterface, ArrayAccess
     /**
      * Gets state
      *
-     * @return \OpenAPI\Client\Model\WalletsState
+     * @return \melmccann\cardanowallet\Model\WalletsState
      */
     public function getState()
     {
@@ -470,7 +470,7 @@ class InlineResponse200 implements ModelInterface, ArrayAccess
     /**
      * Sets state
      *
-     * @param \OpenAPI\Client\Model\WalletsState $state state
+     * @param \melmccann\cardanowallet\Model\WalletsState $state state
      *
      * @return $this
      */
@@ -484,7 +484,7 @@ class InlineResponse200 implements ModelInterface, ArrayAccess
     /**
      * Gets tip
      *
-     * @return \OpenAPI\Client\Model\WalletsTip
+     * @return \melmccann\cardanowallet\Model\WalletsTip
      */
     public function getTip()
     {
@@ -494,7 +494,7 @@ class InlineResponse200 implements ModelInterface, ArrayAccess
     /**
      * Sets tip
      *
-     * @param \OpenAPI\Client\Model\WalletsTip $tip tip
+     * @param \melmccann\cardanowallet\Model\WalletsTip $tip tip
      *
      * @return $this
      */

@@ -1,4 +1,4 @@
-# OpenAPI\Client\AddressesApi
+# melmccann\cardanowallet\AddressesApi
 
 All URIs are relative to *https://localhost:8090/v2*
 
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 ## listAddresses
 
-> \OpenAPI\Client\Model\InlineResponse2003[] listAddresses($wallet_id, $state)
+> \melmccann\cardanowallet\Model\InlineResponse2003[] listAddresses($wallet_id, $state)
 
 List
 
@@ -23,7 +23,7 @@ List
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new OpenAPI\Client\Api\AddressesApi(
+$apiInstance = new melmccann\cardanowallet\Api\AddressesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -50,7 +50,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\InlineResponse2003[]**](../Model/InlineResponse2003.md)
+[**\melmccann\cardanowallet\Model\InlineResponse2003[]**](../Model/InlineResponse2003.md)
 
 ### Authorization
 

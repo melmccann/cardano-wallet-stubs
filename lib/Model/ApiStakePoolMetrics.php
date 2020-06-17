@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanowallet
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace melmccann\cardanowallet\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \melmccann\cardanowallet\ObjectSerializer;
 
 /**
  * ApiStakePoolMetrics Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanowallet
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -57,10 +57,10 @@ class ApiStakePoolMetrics implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $openAPITypes = [
-        'non_myopic_member_rewards' => '\OpenAPI\Client\Model\ApiStakePoolMetricsNonMyopicMemberRewards',
-        'relative_stake' => '\OpenAPI\Client\Model\ApiStakePoolMetricsRelativeStake',
+        'non_myopic_member_rewards' => '\melmccann\cardanowallet\Model\ApiStakePoolMetricsNonMyopicMemberRewards',
+        'relative_stake' => '\melmccann\cardanowallet\Model\ApiStakePoolMetricsRelativeStake',
         'saturation' => 'float',
-        'produced_blocks' => '\OpenAPI\Client\Model\ApiStakePoolMetricsProducedBlocks'
+        'produced_blocks' => '\melmccann\cardanowallet\Model\ApiStakePoolMetricsProducedBlocks'
     ];
 
     /**
@@ -241,7 +241,7 @@ class ApiStakePoolMetrics implements ModelInterface, ArrayAccess
     /**
      * Gets non_myopic_member_rewards
      *
-     * @return \OpenAPI\Client\Model\ApiStakePoolMetricsNonMyopicMemberRewards
+     * @return \melmccann\cardanowallet\Model\ApiStakePoolMetricsNonMyopicMemberRewards
      */
     public function getNonMyopicMemberRewards()
     {
@@ -251,7 +251,7 @@ class ApiStakePoolMetrics implements ModelInterface, ArrayAccess
     /**
      * Sets non_myopic_member_rewards
      *
-     * @param \OpenAPI\Client\Model\ApiStakePoolMetricsNonMyopicMemberRewards $non_myopic_member_rewards non_myopic_member_rewards
+     * @param \melmccann\cardanowallet\Model\ApiStakePoolMetricsNonMyopicMemberRewards $non_myopic_member_rewards non_myopic_member_rewards
      *
      * @return $this
      */
@@ -265,7 +265,7 @@ class ApiStakePoolMetrics implements ModelInterface, ArrayAccess
     /**
      * Gets relative_stake
      *
-     * @return \OpenAPI\Client\Model\ApiStakePoolMetricsRelativeStake
+     * @return \melmccann\cardanowallet\Model\ApiStakePoolMetricsRelativeStake
      */
     public function getRelativeStake()
     {
@@ -275,7 +275,7 @@ class ApiStakePoolMetrics implements ModelInterface, ArrayAccess
     /**
      * Sets relative_stake
      *
-     * @param \OpenAPI\Client\Model\ApiStakePoolMetricsRelativeStake $relative_stake relative_stake
+     * @param \melmccann\cardanowallet\Model\ApiStakePoolMetricsRelativeStake $relative_stake relative_stake
      *
      * @return $this
      */
@@ -318,7 +318,7 @@ class ApiStakePoolMetrics implements ModelInterface, ArrayAccess
     /**
      * Gets produced_blocks
      *
-     * @return \OpenAPI\Client\Model\ApiStakePoolMetricsProducedBlocks
+     * @return \melmccann\cardanowallet\Model\ApiStakePoolMetricsProducedBlocks
      */
     public function getProducedBlocks()
     {
@@ -328,7 +328,7 @@ class ApiStakePoolMetrics implements ModelInterface, ArrayAccess
     /**
      * Sets produced_blocks
      *
-     * @param \OpenAPI\Client\Model\ApiStakePoolMetricsProducedBlocks $produced_blocks produced_blocks
+     * @param \melmccann\cardanowallet\Model\ApiStakePoolMetricsProducedBlocks $produced_blocks produced_blocks
      *
      * @return $this
      */

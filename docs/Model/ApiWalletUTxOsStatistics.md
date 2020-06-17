@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**total** | [**\OpenAPI\Client\Model\InlineResponse2001Total**](InlineResponse2001Total.md) |  | 
+**total** | [**\melmccann\cardanowallet\Model\InlineResponse2001Total**](InlineResponse2001Total.md) |  | 
 **scale** | **string** |  | 
 **distribution** | **map[string,int]** |  | 
 

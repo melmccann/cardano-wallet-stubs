@@ -1,4 +1,4 @@
-# OpenAPI\Client\MigrationsApi
+# melmccann\cardanowallet\MigrationsApi
 
 All URIs are relative to *https://localhost:8090/v2*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 ## getShelleyWalletMigrationInfo
 
-> \OpenAPI\Client\Model\InlineResponse2005 getShelleyWalletMigrationInfo($wallet_id)
+> \melmccann\cardanowallet\Model\InlineResponse2005 getShelleyWalletMigrationInfo($wallet_id)
 
 Calculate Cost
 
@@ -24,7 +24,7 @@ Calculate Cost
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new OpenAPI\Client\Api\MigrationsApi(
+$apiInstance = new melmccann\cardanowallet\Api\MigrationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -49,7 +49,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\InlineResponse2005**](../Model/InlineResponse2005.md)
+[**\melmccann\cardanowallet\Model\InlineResponse2005**](../Model/InlineResponse2005.md)
 
 ### Authorization
 
@@ -67,7 +67,7 @@ No authorization required
 
 ## migrateShelleyWallet
 
-> \OpenAPI\Client\Model\InlineResponse2002[] migrateShelleyWallet($wallet_id, $inline_object7)
+> \melmccann\cardanowallet\Model\InlineResponse2002[] migrateShelleyWallet($wallet_id, $inline_object7)
 
 Migrate
 
@@ -80,13 +80,13 @@ Migrate
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new OpenAPI\Client\Api\MigrationsApi(
+$apiInstance = new melmccann\cardanowallet\Api\MigrationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $wallet_id = 'wallet_id_example'; // string | 
-$inline_object7 = new \OpenAPI\Client\Model\InlineObject7(); // \OpenAPI\Client\Model\InlineObject7 | 
+$inline_object7 = new \melmccann\cardanowallet\Model\InlineObject7(); // \melmccann\cardanowallet\Model\InlineObject7 | 
 
 try {
     $result = $apiInstance->migrateShelleyWallet($wallet_id, $inline_object7);
@@ -103,11 +103,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **wallet_id** | **string**|  |
- **inline_object7** | [**\OpenAPI\Client\Model\InlineObject7**](../Model/InlineObject7.md)|  |
+ **inline_object7** | [**\melmccann\cardanowallet\Model\InlineObject7**](../Model/InlineObject7.md)|  |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\InlineResponse2002[]**](../Model/InlineResponse2002.md)
+[**\melmccann\cardanowallet\Model\InlineResponse2002[]**](../Model/InlineResponse2002.md)
 
 ### Authorization
 

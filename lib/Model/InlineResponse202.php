@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanowallet
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace melmccann\cardanowallet\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \melmccann\cardanowallet\ObjectSerializer;
 
 /**
  * InlineResponse202 Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanowallet
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -57,8 +57,8 @@ class InlineResponse202 implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $openAPITypes = [
-        'estimated_min' => '\OpenAPI\Client\Model\InlineResponse2001Total',
-        'estimated_max' => '\OpenAPI\Client\Model\InlineResponse2001Total'
+        'estimated_min' => '\melmccann\cardanowallet\Model\InlineResponse2001Total',
+        'estimated_max' => '\melmccann\cardanowallet\Model\InlineResponse2001Total'
     ];
 
     /**
@@ -219,7 +219,7 @@ class InlineResponse202 implements ModelInterface, ArrayAccess
     /**
      * Gets estimated_min
      *
-     * @return \OpenAPI\Client\Model\InlineResponse2001Total
+     * @return \melmccann\cardanowallet\Model\InlineResponse2001Total
      */
     public function getEstimatedMin()
     {
@@ -229,7 +229,7 @@ class InlineResponse202 implements ModelInterface, ArrayAccess
     /**
      * Sets estimated_min
      *
-     * @param \OpenAPI\Client\Model\InlineResponse2001Total $estimated_min estimated_min
+     * @param \melmccann\cardanowallet\Model\InlineResponse2001Total $estimated_min estimated_min
      *
      * @return $this
      */
@@ -243,7 +243,7 @@ class InlineResponse202 implements ModelInterface, ArrayAccess
     /**
      * Gets estimated_max
      *
-     * @return \OpenAPI\Client\Model\InlineResponse2001Total
+     * @return \melmccann\cardanowallet\Model\InlineResponse2001Total
      */
     public function getEstimatedMax()
     {
@@ -253,7 +253,7 @@ class InlineResponse202 implements ModelInterface, ArrayAccess
     /**
      * Sets estimated_max
      *
-     * @param \OpenAPI\Client\Model\InlineResponse2001Total $estimated_max estimated_max
+     * @param \melmccann\cardanowallet\Model\InlineResponse2001Total $estimated_max estimated_max
      *
      * @return $this
      */

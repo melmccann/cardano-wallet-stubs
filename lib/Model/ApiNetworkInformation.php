@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanowallet
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace melmccann\cardanowallet\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \melmccann\cardanowallet\ObjectSerializer;
 
 /**
  * ApiNetworkInformation Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanowallet
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -57,10 +57,10 @@ class ApiNetworkInformation implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $openAPITypes = [
-        'sync_progress' => '\OpenAPI\Client\Model\InlineResponse2007SyncProgress',
-        'node_tip' => '\OpenAPI\Client\Model\InlineResponse2007NodeTip',
-        'network_tip' => '\OpenAPI\Client\Model\InlineResponse2007NetworkTip',
-        'next_epoch' => '\OpenAPI\Client\Model\WalletsDelegationChangesAt'
+        'sync_progress' => '\melmccann\cardanowallet\Model\InlineResponse2007SyncProgress',
+        'node_tip' => '\melmccann\cardanowallet\Model\InlineResponse2007NodeTip',
+        'network_tip' => '\melmccann\cardanowallet\Model\InlineResponse2007NetworkTip',
+        'next_epoch' => '\melmccann\cardanowallet\Model\WalletsDelegationChangesAt'
     ];
 
     /**
@@ -237,7 +237,7 @@ class ApiNetworkInformation implements ModelInterface, ArrayAccess
     /**
      * Gets sync_progress
      *
-     * @return \OpenAPI\Client\Model\InlineResponse2007SyncProgress
+     * @return \melmccann\cardanowallet\Model\InlineResponse2007SyncProgress
      */
     public function getSyncProgress()
     {
@@ -247,7 +247,7 @@ class ApiNetworkInformation implements ModelInterface, ArrayAccess
     /**
      * Sets sync_progress
      *
-     * @param \OpenAPI\Client\Model\InlineResponse2007SyncProgress $sync_progress sync_progress
+     * @param \melmccann\cardanowallet\Model\InlineResponse2007SyncProgress $sync_progress sync_progress
      *
      * @return $this
      */
@@ -261,7 +261,7 @@ class ApiNetworkInformation implements ModelInterface, ArrayAccess
     /**
      * Gets node_tip
      *
-     * @return \OpenAPI\Client\Model\InlineResponse2007NodeTip
+     * @return \melmccann\cardanowallet\Model\InlineResponse2007NodeTip
      */
     public function getNodeTip()
     {
@@ -271,7 +271,7 @@ class ApiNetworkInformation implements ModelInterface, ArrayAccess
     /**
      * Sets node_tip
      *
-     * @param \OpenAPI\Client\Model\InlineResponse2007NodeTip $node_tip node_tip
+     * @param \melmccann\cardanowallet\Model\InlineResponse2007NodeTip $node_tip node_tip
      *
      * @return $this
      */
@@ -285,7 +285,7 @@ class ApiNetworkInformation implements ModelInterface, ArrayAccess
     /**
      * Gets network_tip
      *
-     * @return \OpenAPI\Client\Model\InlineResponse2007NetworkTip
+     * @return \melmccann\cardanowallet\Model\InlineResponse2007NetworkTip
      */
     public function getNetworkTip()
     {
@@ -295,7 +295,7 @@ class ApiNetworkInformation implements ModelInterface, ArrayAccess
     /**
      * Sets network_tip
      *
-     * @param \OpenAPI\Client\Model\InlineResponse2007NetworkTip $network_tip network_tip
+     * @param \melmccann\cardanowallet\Model\InlineResponse2007NetworkTip $network_tip network_tip
      *
      * @return $this
      */
@@ -309,7 +309,7 @@ class ApiNetworkInformation implements ModelInterface, ArrayAccess
     /**
      * Gets next_epoch
      *
-     * @return \OpenAPI\Client\Model\WalletsDelegationChangesAt
+     * @return \melmccann\cardanowallet\Model\WalletsDelegationChangesAt
      */
     public function getNextEpoch()
     {
@@ -319,7 +319,7 @@ class ApiNetworkInformation implements ModelInterface, ArrayAccess
     /**
      * Sets next_epoch
      *
-     * @param \OpenAPI\Client\Model\WalletsDelegationChangesAt $next_epoch next_epoch
+     * @param \melmccann\cardanowallet\Model\WalletsDelegationChangesAt $next_epoch next_epoch
      *
      * @return $this
      */

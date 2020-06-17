@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanowallet
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,7 +27,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace OpenAPI\Client;
+namespace melmccann\cardanowallet;
 
 use PHPUnit\Framework\TestCase;
 
@@ -36,7 +36,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description &lt;span style&#x3D;\&quot;position: relative; left: 35px; top: -21px; vertical-align: middle; background-color: rgba(142, 142, 220, 0.05); color: rgba(50, 50, 159, 0.9); margin: 0 5px; padding: 0 5px; border: 1px solid rgba(50, 50, 159, 0.1); line-height: 20px; font-size: 13px; border-radius: 2px;\&quot;&gt; &lt;strong&gt;if:&lt;/strong&gt; status &#x3D;&#x3D; pending &lt;/span&gt;&lt;br/&gt; The point in time at which a transaction became pending.
- * @package     OpenAPI\Client
+ * @package     melmccann\cardanowallet
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */

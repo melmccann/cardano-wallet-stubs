@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanowallet
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,7 +27,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace OpenAPI\Client;
+namespace melmccann\cardanowallet;
 
 use PHPUnit\Framework\TestCase;
 
@@ -36,7 +36,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description ApiByronWalletLedgerPostData
- * @package     OpenAPI\Client
+ * @package     melmccann\cardanowallet
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */
@@ -82,20 +82,6 @@ class ApiByronWalletLedgerPostDataTest extends TestCase
      * Test attribute "style"
      */
     public function testPropertyStyle()
-    {
-    }
-
-    /**
-     * Test attribute "name"
-     */
-    public function testPropertyName()
-    {
-    }
-
-    /**
-     * Test attribute "passphrase"
-     */
-    public function testPropertyPassphrase()
     {
     }
 

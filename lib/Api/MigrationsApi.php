@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanowallet
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace melmccann\cardanowallet\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use melmccann\cardanowallet\ApiException;
+use melmccann\cardanowallet\Configuration;
+use melmccann\cardanowallet\HeaderSelector;
+use melmccann\cardanowallet\ObjectSerializer;
 
 /**
  * MigrationsApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanowallet
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -122,9 +122,9 @@ class MigrationsApi
      *
      * @param  string $wallet_id wallet_id (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \melmccann\cardanowallet\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\InlineResponse2005|\OpenAPI\Client\Model\InlineResponse405|\OpenAPI\Client\Model\InlineResponse405|\OpenAPI\Client\Model\InlineResponse405
+     * @return \melmccann\cardanowallet\Model\InlineResponse2005|\melmccann\cardanowallet\Model\InlineResponse405|\melmccann\cardanowallet\Model\InlineResponse405|\melmccann\cardanowallet\Model\InlineResponse405
      */
     public function getShelleyWalletMigrationInfo($wallet_id)
     {
@@ -139,9 +139,9 @@ class MigrationsApi
      *
      * @param  string $wallet_id (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \melmccann\cardanowallet\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\InlineResponse2005|\OpenAPI\Client\Model\InlineResponse405|\OpenAPI\Client\Model\InlineResponse405|\OpenAPI\Client\Model\InlineResponse405, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \melmccann\cardanowallet\Model\InlineResponse2005|\melmccann\cardanowallet\Model\InlineResponse405|\melmccann\cardanowallet\Model\InlineResponse405|\melmccann\cardanowallet\Model\InlineResponse405, HTTP status code, HTTP response headers (array of strings)
      */
     public function getShelleyWalletMigrationInfoWithHttpInfo($wallet_id)
     {
@@ -178,56 +178,56 @@ class MigrationsApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\InlineResponse2005' === '\SplFileObject') {
+                    if ('\melmccann\cardanowallet\Model\InlineResponse2005' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse2005', []),
+                        ObjectSerializer::deserialize($content, '\melmccann\cardanowallet\Model\InlineResponse2005', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 404:
-                    if ('\OpenAPI\Client\Model\InlineResponse405' === '\SplFileObject') {
+                    if ('\melmccann\cardanowallet\Model\InlineResponse405' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse405', []),
+                        ObjectSerializer::deserialize($content, '\melmccann\cardanowallet\Model\InlineResponse405', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 405:
-                    if ('\OpenAPI\Client\Model\InlineResponse405' === '\SplFileObject') {
+                    if ('\melmccann\cardanowallet\Model\InlineResponse405' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse405', []),
+                        ObjectSerializer::deserialize($content, '\melmccann\cardanowallet\Model\InlineResponse405', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 406:
-                    if ('\OpenAPI\Client\Model\InlineResponse405' === '\SplFileObject') {
+                    if ('\melmccann\cardanowallet\Model\InlineResponse405' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse405', []),
+                        ObjectSerializer::deserialize($content, '\melmccann\cardanowallet\Model\InlineResponse405', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\InlineResponse2005';
+            $returnType = '\melmccann\cardanowallet\Model\InlineResponse2005';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -246,7 +246,7 @@ class MigrationsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineResponse2005',
+                        '\melmccann\cardanowallet\Model\InlineResponse2005',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -254,7 +254,7 @@ class MigrationsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineResponse405',
+                        '\melmccann\cardanowallet\Model\InlineResponse405',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -262,7 +262,7 @@ class MigrationsApi
                 case 405:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineResponse405',
+                        '\melmccann\cardanowallet\Model\InlineResponse405',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -270,7 +270,7 @@ class MigrationsApi
                 case 406:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineResponse405',
+                        '\melmccann\cardanowallet\Model\InlineResponse405',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -312,7 +312,7 @@ class MigrationsApi
      */
     public function getShelleyWalletMigrationInfoAsyncWithHttpInfo($wallet_id)
     {
-        $returnType = '\OpenAPI\Client\Model\InlineResponse2005';
+        $returnType = '\melmccann\cardanowallet\Model\InlineResponse2005';
         $request = $this->getShelleyWalletMigrationInfoRequest($wallet_id);
 
         return $this->client
@@ -461,11 +461,11 @@ class MigrationsApi
      * Migrate
      *
      * @param  string $wallet_id wallet_id (required)
-     * @param  \OpenAPI\Client\Model\InlineObject7 $inline_object7 inline_object7 (required)
+     * @param  \melmccann\cardanowallet\Model\InlineObject7 $inline_object7 inline_object7 (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \melmccann\cardanowallet\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\InlineResponse2002[]|\OpenAPI\Client\Model\InlineResponse405|\OpenAPI\Client\Model\InlineResponse405|\OpenAPI\Client\Model\InlineResponse405|\OpenAPI\Client\Model\InlineResponse405|\OpenAPI\Client\Model\InlineResponse405
+     * @return \melmccann\cardanowallet\Model\InlineResponse2002[]|\melmccann\cardanowallet\Model\InlineResponse405|\melmccann\cardanowallet\Model\InlineResponse405|\melmccann\cardanowallet\Model\InlineResponse405|\melmccann\cardanowallet\Model\InlineResponse405|\melmccann\cardanowallet\Model\InlineResponse405
      */
     public function migrateShelleyWallet($wallet_id, $inline_object7)
     {
@@ -479,11 +479,11 @@ class MigrationsApi
      * Migrate
      *
      * @param  string $wallet_id (required)
-     * @param  \OpenAPI\Client\Model\InlineObject7 $inline_object7 (required)
+     * @param  \melmccann\cardanowallet\Model\InlineObject7 $inline_object7 (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \melmccann\cardanowallet\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\InlineResponse2002[]|\OpenAPI\Client\Model\InlineResponse405|\OpenAPI\Client\Model\InlineResponse405|\OpenAPI\Client\Model\InlineResponse405|\OpenAPI\Client\Model\InlineResponse405|\OpenAPI\Client\Model\InlineResponse405, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \melmccann\cardanowallet\Model\InlineResponse2002[]|\melmccann\cardanowallet\Model\InlineResponse405|\melmccann\cardanowallet\Model\InlineResponse405|\melmccann\cardanowallet\Model\InlineResponse405|\melmccann\cardanowallet\Model\InlineResponse405|\melmccann\cardanowallet\Model\InlineResponse405, HTTP status code, HTTP response headers (array of strings)
      */
     public function migrateShelleyWalletWithHttpInfo($wallet_id, $inline_object7)
     {
@@ -520,80 +520,80 @@ class MigrationsApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\InlineResponse2002[]' === '\SplFileObject') {
+                    if ('\melmccann\cardanowallet\Model\InlineResponse2002[]' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse2002[]', []),
+                        ObjectSerializer::deserialize($content, '\melmccann\cardanowallet\Model\InlineResponse2002[]', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\OpenAPI\Client\Model\InlineResponse405' === '\SplFileObject') {
+                    if ('\melmccann\cardanowallet\Model\InlineResponse405' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse405', []),
+                        ObjectSerializer::deserialize($content, '\melmccann\cardanowallet\Model\InlineResponse405', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 404:
-                    if ('\OpenAPI\Client\Model\InlineResponse405' === '\SplFileObject') {
+                    if ('\melmccann\cardanowallet\Model\InlineResponse405' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse405', []),
+                        ObjectSerializer::deserialize($content, '\melmccann\cardanowallet\Model\InlineResponse405', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 405:
-                    if ('\OpenAPI\Client\Model\InlineResponse405' === '\SplFileObject') {
+                    if ('\melmccann\cardanowallet\Model\InlineResponse405' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse405', []),
+                        ObjectSerializer::deserialize($content, '\melmccann\cardanowallet\Model\InlineResponse405', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 406:
-                    if ('\OpenAPI\Client\Model\InlineResponse405' === '\SplFileObject') {
+                    if ('\melmccann\cardanowallet\Model\InlineResponse405' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse405', []),
+                        ObjectSerializer::deserialize($content, '\melmccann\cardanowallet\Model\InlineResponse405', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 415:
-                    if ('\OpenAPI\Client\Model\InlineResponse405' === '\SplFileObject') {
+                    if ('\melmccann\cardanowallet\Model\InlineResponse405' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse405', []),
+                        ObjectSerializer::deserialize($content, '\melmccann\cardanowallet\Model\InlineResponse405', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\InlineResponse2002[]';
+            $returnType = '\melmccann\cardanowallet\Model\InlineResponse2002[]';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -612,7 +612,7 @@ class MigrationsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineResponse2002[]',
+                        '\melmccann\cardanowallet\Model\InlineResponse2002[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -620,7 +620,7 @@ class MigrationsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineResponse405',
+                        '\melmccann\cardanowallet\Model\InlineResponse405',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -628,7 +628,7 @@ class MigrationsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineResponse405',
+                        '\melmccann\cardanowallet\Model\InlineResponse405',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -636,7 +636,7 @@ class MigrationsApi
                 case 405:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineResponse405',
+                        '\melmccann\cardanowallet\Model\InlineResponse405',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -644,7 +644,7 @@ class MigrationsApi
                 case 406:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineResponse405',
+                        '\melmccann\cardanowallet\Model\InlineResponse405',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -652,7 +652,7 @@ class MigrationsApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineResponse405',
+                        '\melmccann\cardanowallet\Model\InlineResponse405',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -668,7 +668,7 @@ class MigrationsApi
      * Migrate
      *
      * @param  string $wallet_id (required)
-     * @param  \OpenAPI\Client\Model\InlineObject7 $inline_object7 (required)
+     * @param  \melmccann\cardanowallet\Model\InlineObject7 $inline_object7 (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -689,14 +689,14 @@ class MigrationsApi
      * Migrate
      *
      * @param  string $wallet_id (required)
-     * @param  \OpenAPI\Client\Model\InlineObject7 $inline_object7 (required)
+     * @param  \melmccann\cardanowallet\Model\InlineObject7 $inline_object7 (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function migrateShelleyWalletAsyncWithHttpInfo($wallet_id, $inline_object7)
     {
-        $returnType = '\OpenAPI\Client\Model\InlineResponse2002[]';
+        $returnType = '\melmccann\cardanowallet\Model\InlineResponse2002[]';
         $request = $this->migrateShelleyWalletRequest($wallet_id, $inline_object7);
 
         return $this->client
@@ -737,7 +737,7 @@ class MigrationsApi
      * Create request for operation 'migrateShelleyWallet'
      *
      * @param  string $wallet_id (required)
-     * @param  \OpenAPI\Client\Model\InlineObject7 $inline_object7 (required)
+     * @param  \melmccann\cardanowallet\Model\InlineObject7 $inline_object7 (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

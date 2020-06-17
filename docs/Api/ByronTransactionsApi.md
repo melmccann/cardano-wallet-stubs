@@ -1,4 +1,4 @@
-# OpenAPI\Client\ByronTransactionsApi
+# melmccann\cardanowallet\ByronTransactionsApi
 
 All URIs are relative to *https://localhost:8090/v2*
 
@@ -26,7 +26,7 @@ Forget
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new OpenAPI\Client\Api\ByronTransactionsApi(
+$apiInstance = new melmccann\cardanowallet\Api\ByronTransactionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -70,7 +70,7 @@ No authorization required
 
 ## listByronTransactions
 
-> \OpenAPI\Client\Model\InlineResponse2002[] listByronTransactions($wallet_id, $start, $end, $order)
+> \melmccann\cardanowallet\Model\InlineResponse2002[] listByronTransactions($wallet_id, $start, $end, $order)
 
 List
 
@@ -83,7 +83,7 @@ List
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new OpenAPI\Client\Api\ByronTransactionsApi(
+$apiInstance = new melmccann\cardanowallet\Api\ByronTransactionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -114,7 +114,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\InlineResponse2002[]**](../Model/InlineResponse2002.md)
+[**\melmccann\cardanowallet\Model\InlineResponse2002[]**](../Model/InlineResponse2002.md)
 
 ### Authorization
 
@@ -132,7 +132,7 @@ No authorization required
 
 ## postByronTransaction
 
-> \OpenAPI\Client\Model\InlineResponse2002 postByronTransaction($wallet_id, $inline_object11)
+> \melmccann\cardanowallet\Model\InlineResponse2002 postByronTransaction($wallet_id, $inline_object11)
 
 Create
 
@@ -145,13 +145,13 @@ Create
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new OpenAPI\Client\Api\ByronTransactionsApi(
+$apiInstance = new melmccann\cardanowallet\Api\ByronTransactionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $wallet_id = 'wallet_id_example'; // string | 
-$inline_object11 = new \OpenAPI\Client\Model\InlineObject11(); // \OpenAPI\Client\Model\InlineObject11 | 
+$inline_object11 = new \melmccann\cardanowallet\Model\InlineObject11(); // \melmccann\cardanowallet\Model\InlineObject11 | 
 
 try {
     $result = $apiInstance->postByronTransaction($wallet_id, $inline_object11);
@@ -168,11 +168,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **wallet_id** | **string**|  |
- **inline_object11** | [**\OpenAPI\Client\Model\InlineObject11**](../Model/InlineObject11.md)|  |
+ **inline_object11** | [**\melmccann\cardanowallet\Model\InlineObject11**](../Model/InlineObject11.md)|  |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\InlineResponse2002**](../Model/InlineResponse2002.md)
+[**\melmccann\cardanowallet\Model\InlineResponse2002**](../Model/InlineResponse2002.md)
 
 ### Authorization
 
@@ -190,7 +190,7 @@ No authorization required
 
 ## postByronTransactionFee
 
-> \OpenAPI\Client\Model\InlineResponse202 postByronTransactionFee($wallet_id, $inline_object12)
+> \melmccann\cardanowallet\Model\InlineResponse202 postByronTransactionFee($wallet_id, $inline_object12)
 
 Estimate Fee
 
@@ -203,13 +203,13 @@ Estimate Fee
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new OpenAPI\Client\Api\ByronTransactionsApi(
+$apiInstance = new melmccann\cardanowallet\Api\ByronTransactionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $wallet_id = 'wallet_id_example'; // string | 
-$inline_object12 = new \OpenAPI\Client\Model\InlineObject12(); // \OpenAPI\Client\Model\InlineObject12 | 
+$inline_object12 = new \melmccann\cardanowallet\Model\InlineObject12(); // \melmccann\cardanowallet\Model\InlineObject12 | 
 
 try {
     $result = $apiInstance->postByronTransactionFee($wallet_id, $inline_object12);
@@ -226,11 +226,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **wallet_id** | **string**|  |
- **inline_object12** | [**\OpenAPI\Client\Model\InlineObject12**](../Model/InlineObject12.md)|  |
+ **inline_object12** | [**\melmccann\cardanowallet\Model\InlineObject12**](../Model/InlineObject12.md)|  |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\InlineResponse202**](../Model/InlineResponse202.md)
+[**\melmccann\cardanowallet\Model\InlineResponse202**](../Model/InlineResponse202.md)
 
 ### Authorization
 

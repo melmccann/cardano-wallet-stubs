@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanowallet
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace melmccann\cardanowallet\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \melmccann\cardanowallet\ObjectSerializer;
 
 /**
  * WalletsDelegationNext Class Doc Comment
  *
  * @category Class
  * @description Next delegation status becomes active at the start of the second epoch after the corresponding delegation certificate was discovered. The exact moment is specified by changes_at
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanowallet
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -60,7 +60,7 @@ class WalletsDelegationNext implements ModelInterface, ArrayAccess
     protected static $openAPITypes = [
         'status' => 'string',
         'target' => 'string',
-        'changes_at' => '\OpenAPI\Client\Model\WalletsDelegationChangesAt'
+        'changes_at' => '\melmccann\cardanowallet\Model\WalletsDelegationChangesAt'
     ];
 
     /**
@@ -321,7 +321,7 @@ class WalletsDelegationNext implements ModelInterface, ArrayAccess
     /**
      * Gets changes_at
      *
-     * @return \OpenAPI\Client\Model\WalletsDelegationChangesAt
+     * @return \melmccann\cardanowallet\Model\WalletsDelegationChangesAt
      */
     public function getChangesAt()
     {
@@ -331,7 +331,7 @@ class WalletsDelegationNext implements ModelInterface, ArrayAccess
     /**
      * Sets changes_at
      *
-     * @param \OpenAPI\Client\Model\WalletsDelegationChangesAt $changes_at changes_at
+     * @param \melmccann\cardanowallet\Model\WalletsDelegationChangesAt $changes_at changes_at
      *
      * @return $this
      */

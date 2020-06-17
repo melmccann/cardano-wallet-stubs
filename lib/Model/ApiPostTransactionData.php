@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanowallet
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace melmccann\cardanowallet\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \melmccann\cardanowallet\ObjectSerializer;
 
 /**
  * ApiPostTransactionData Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanowallet
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -57,7 +57,7 @@ class ApiPostTransactionData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $openAPITypes = [
-        'payments' => '\OpenAPI\Client\Model\WalletsWalletIdTransactionsOutputs[]',
+        'payments' => '\melmccann\cardanowallet\Model\WalletsWalletIdTransactionsOutputs[]',
         'passphrase' => 'string'
     ];
 
@@ -227,7 +227,7 @@ class ApiPostTransactionData implements ModelInterface, ArrayAccess
     /**
      * Gets payments
      *
-     * @return \OpenAPI\Client\Model\WalletsWalletIdTransactionsOutputs[]
+     * @return \melmccann\cardanowallet\Model\WalletsWalletIdTransactionsOutputs[]
      */
     public function getPayments()
     {
@@ -237,7 +237,7 @@ class ApiPostTransactionData implements ModelInterface, ArrayAccess
     /**
      * Sets payments
      *
-     * @param \OpenAPI\Client\Model\WalletsWalletIdTransactionsOutputs[] $payments A list of target outputs
+     * @param \melmccann\cardanowallet\Model\WalletsWalletIdTransactionsOutputs[] $payments A list of target outputs
      *
      * @return $this
      */

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanowallet
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace melmccann\cardanowallet\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use melmccann\cardanowallet\ApiException;
+use melmccann\cardanowallet\Configuration;
+use melmccann\cardanowallet\HeaderSelector;
+use melmccann\cardanowallet\ObjectSerializer;
 
 /**
  * NetworkApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanowallet
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -122,9 +122,9 @@ class NetworkApi
      *
      * @param  bool $force_ntp_check NTP checks are cached for short duration to avoid sending too many queries to the central NTP servers. In some cases however, a client may want to force a new check.  When this flag is set, the request **will block** until NTP server responds or will timeout after a while without any answer from the NTP server. (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \melmccann\cardanowallet\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\InlineResponse2008|\OpenAPI\Client\Model\InlineResponse405|\OpenAPI\Client\Model\InlineResponse405
+     * @return \melmccann\cardanowallet\Model\InlineResponse2008|\melmccann\cardanowallet\Model\InlineResponse405|\melmccann\cardanowallet\Model\InlineResponse405
      */
     public function getNetworkClock($force_ntp_check = null)
     {
@@ -139,9 +139,9 @@ class NetworkApi
      *
      * @param  bool $force_ntp_check NTP checks are cached for short duration to avoid sending too many queries to the central NTP servers. In some cases however, a client may want to force a new check.  When this flag is set, the request **will block** until NTP server responds or will timeout after a while without any answer from the NTP server. (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \melmccann\cardanowallet\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\InlineResponse2008|\OpenAPI\Client\Model\InlineResponse405|\OpenAPI\Client\Model\InlineResponse405, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \melmccann\cardanowallet\Model\InlineResponse2008|\melmccann\cardanowallet\Model\InlineResponse405|\melmccann\cardanowallet\Model\InlineResponse405, HTTP status code, HTTP response headers (array of strings)
      */
     public function getNetworkClockWithHttpInfo($force_ntp_check = null)
     {
@@ -178,44 +178,44 @@ class NetworkApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\InlineResponse2008' === '\SplFileObject') {
+                    if ('\melmccann\cardanowallet\Model\InlineResponse2008' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse2008', []),
+                        ObjectSerializer::deserialize($content, '\melmccann\cardanowallet\Model\InlineResponse2008', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 405:
-                    if ('\OpenAPI\Client\Model\InlineResponse405' === '\SplFileObject') {
+                    if ('\melmccann\cardanowallet\Model\InlineResponse405' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse405', []),
+                        ObjectSerializer::deserialize($content, '\melmccann\cardanowallet\Model\InlineResponse405', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 406:
-                    if ('\OpenAPI\Client\Model\InlineResponse405' === '\SplFileObject') {
+                    if ('\melmccann\cardanowallet\Model\InlineResponse405' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse405', []),
+                        ObjectSerializer::deserialize($content, '\melmccann\cardanowallet\Model\InlineResponse405', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\InlineResponse2008';
+            $returnType = '\melmccann\cardanowallet\Model\InlineResponse2008';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -234,7 +234,7 @@ class NetworkApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineResponse2008',
+                        '\melmccann\cardanowallet\Model\InlineResponse2008',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -242,7 +242,7 @@ class NetworkApi
                 case 405:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineResponse405',
+                        '\melmccann\cardanowallet\Model\InlineResponse405',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -250,7 +250,7 @@ class NetworkApi
                 case 406:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineResponse405',
+                        '\melmccann\cardanowallet\Model\InlineResponse405',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -292,7 +292,7 @@ class NetworkApi
      */
     public function getNetworkClockAsyncWithHttpInfo($force_ntp_check = null)
     {
-        $returnType = '\OpenAPI\Client\Model\InlineResponse2008';
+        $returnType = '\melmccann\cardanowallet\Model\InlineResponse2008';
         $request = $this->getNetworkClockRequest($force_ntp_check);
 
         return $this->client
@@ -431,9 +431,9 @@ class NetworkApi
      * Information
      *
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \melmccann\cardanowallet\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\InlineResponse2007|\OpenAPI\Client\Model\InlineResponse405|\OpenAPI\Client\Model\InlineResponse405
+     * @return \melmccann\cardanowallet\Model\InlineResponse2007|\melmccann\cardanowallet\Model\InlineResponse405|\melmccann\cardanowallet\Model\InlineResponse405
      */
     public function getNetworkInformation()
     {
@@ -447,9 +447,9 @@ class NetworkApi
      * Information
      *
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \melmccann\cardanowallet\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\InlineResponse2007|\OpenAPI\Client\Model\InlineResponse405|\OpenAPI\Client\Model\InlineResponse405, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \melmccann\cardanowallet\Model\InlineResponse2007|\melmccann\cardanowallet\Model\InlineResponse405|\melmccann\cardanowallet\Model\InlineResponse405, HTTP status code, HTTP response headers (array of strings)
      */
     public function getNetworkInformationWithHttpInfo()
     {
@@ -486,44 +486,44 @@ class NetworkApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\InlineResponse2007' === '\SplFileObject') {
+                    if ('\melmccann\cardanowallet\Model\InlineResponse2007' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse2007', []),
+                        ObjectSerializer::deserialize($content, '\melmccann\cardanowallet\Model\InlineResponse2007', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 405:
-                    if ('\OpenAPI\Client\Model\InlineResponse405' === '\SplFileObject') {
+                    if ('\melmccann\cardanowallet\Model\InlineResponse405' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse405', []),
+                        ObjectSerializer::deserialize($content, '\melmccann\cardanowallet\Model\InlineResponse405', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 406:
-                    if ('\OpenAPI\Client\Model\InlineResponse405' === '\SplFileObject') {
+                    if ('\melmccann\cardanowallet\Model\InlineResponse405' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse405', []),
+                        ObjectSerializer::deserialize($content, '\melmccann\cardanowallet\Model\InlineResponse405', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\InlineResponse2007';
+            $returnType = '\melmccann\cardanowallet\Model\InlineResponse2007';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -542,7 +542,7 @@ class NetworkApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineResponse2007',
+                        '\melmccann\cardanowallet\Model\InlineResponse2007',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -550,7 +550,7 @@ class NetworkApi
                 case 405:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineResponse405',
+                        '\melmccann\cardanowallet\Model\InlineResponse405',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -558,7 +558,7 @@ class NetworkApi
                 case 406:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineResponse405',
+                        '\melmccann\cardanowallet\Model\InlineResponse405',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -598,7 +598,7 @@ class NetworkApi
      */
     public function getNetworkInformationAsyncWithHttpInfo()
     {
-        $returnType = '\OpenAPI\Client\Model\InlineResponse2007';
+        $returnType = '\melmccann\cardanowallet\Model\InlineResponse2007';
         $request = $this->getNetworkInformationRequest();
 
         return $this->client
@@ -725,9 +725,9 @@ class NetworkApi
      * Parameters
      *
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \melmccann\cardanowallet\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\InlineResponse2009|\OpenAPI\Client\Model\InlineResponse405|\OpenAPI\Client\Model\InlineResponse405
+     * @return \melmccann\cardanowallet\Model\InlineResponse2009|\melmccann\cardanowallet\Model\InlineResponse405|\melmccann\cardanowallet\Model\InlineResponse405
      */
     public function getNetworkParameters()
     {
@@ -741,9 +741,9 @@ class NetworkApi
      * Parameters
      *
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \melmccann\cardanowallet\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\InlineResponse2009|\OpenAPI\Client\Model\InlineResponse405|\OpenAPI\Client\Model\InlineResponse405, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \melmccann\cardanowallet\Model\InlineResponse2009|\melmccann\cardanowallet\Model\InlineResponse405|\melmccann\cardanowallet\Model\InlineResponse405, HTTP status code, HTTP response headers (array of strings)
      */
     public function getNetworkParametersWithHttpInfo()
     {
@@ -780,44 +780,44 @@ class NetworkApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\InlineResponse2009' === '\SplFileObject') {
+                    if ('\melmccann\cardanowallet\Model\InlineResponse2009' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse2009', []),
+                        ObjectSerializer::deserialize($content, '\melmccann\cardanowallet\Model\InlineResponse2009', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 405:
-                    if ('\OpenAPI\Client\Model\InlineResponse405' === '\SplFileObject') {
+                    if ('\melmccann\cardanowallet\Model\InlineResponse405' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse405', []),
+                        ObjectSerializer::deserialize($content, '\melmccann\cardanowallet\Model\InlineResponse405', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 406:
-                    if ('\OpenAPI\Client\Model\InlineResponse405' === '\SplFileObject') {
+                    if ('\melmccann\cardanowallet\Model\InlineResponse405' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse405', []),
+                        ObjectSerializer::deserialize($content, '\melmccann\cardanowallet\Model\InlineResponse405', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\InlineResponse2009';
+            $returnType = '\melmccann\cardanowallet\Model\InlineResponse2009';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -836,7 +836,7 @@ class NetworkApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineResponse2009',
+                        '\melmccann\cardanowallet\Model\InlineResponse2009',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -844,7 +844,7 @@ class NetworkApi
                 case 405:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineResponse405',
+                        '\melmccann\cardanowallet\Model\InlineResponse405',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -852,7 +852,7 @@ class NetworkApi
                 case 406:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineResponse405',
+                        '\melmccann\cardanowallet\Model\InlineResponse405',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -892,7 +892,7 @@ class NetworkApi
      */
     public function getNetworkParametersAsyncWithHttpInfo()
     {
-        $returnType = '\OpenAPI\Client\Model\InlineResponse2009';
+        $returnType = '\melmccann\cardanowallet\Model\InlineResponse2009';
         $request = $this->getNetworkParametersRequest();
 
         return $this->client

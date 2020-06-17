@@ -1,4 +1,4 @@
-# OpenAPI\Client\NetworkApi
+# melmccann\cardanowallet\NetworkApi
 
 All URIs are relative to *https://localhost:8090/v2*
 
@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 ## getNetworkClock
 
-> \OpenAPI\Client\Model\InlineResponse2008 getNetworkClock($force_ntp_check)
+> \melmccann\cardanowallet\Model\InlineResponse2008 getNetworkClock($force_ntp_check)
 
 Clock
 
@@ -25,7 +25,7 @@ Clock
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new OpenAPI\Client\Api\NetworkApi(
+$apiInstance = new melmccann\cardanowallet\Api\NetworkApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -50,7 +50,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\InlineResponse2008**](../Model/InlineResponse2008.md)
+[**\melmccann\cardanowallet\Model\InlineResponse2008**](../Model/InlineResponse2008.md)
 
 ### Authorization
 
@@ -68,7 +68,7 @@ No authorization required
 
 ## getNetworkInformation
 
-> \OpenAPI\Client\Model\InlineResponse2007 getNetworkInformation()
+> \melmccann\cardanowallet\Model\InlineResponse2007 getNetworkInformation()
 
 Information
 
@@ -81,7 +81,7 @@ Information
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new OpenAPI\Client\Api\NetworkApi(
+$apiInstance = new melmccann\cardanowallet\Api\NetworkApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -102,7 +102,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\OpenAPI\Client\Model\InlineResponse2007**](../Model/InlineResponse2007.md)
+[**\melmccann\cardanowallet\Model\InlineResponse2007**](../Model/InlineResponse2007.md)
 
 ### Authorization
 
@@ -120,7 +120,7 @@ No authorization required
 
 ## getNetworkParameters
 
-> \OpenAPI\Client\Model\InlineResponse2009 getNetworkParameters()
+> \melmccann\cardanowallet\Model\InlineResponse2009 getNetworkParameters()
 
 Parameters
 
@@ -133,7 +133,7 @@ Parameters
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new OpenAPI\Client\Api\NetworkApi(
+$apiInstance = new melmccann\cardanowallet\Api\NetworkApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -154,7 +154,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\OpenAPI\Client\Model\InlineResponse2009**](../Model/InlineResponse2009.md)
+[**\melmccann\cardanowallet\Model\InlineResponse2009**](../Model/InlineResponse2009.md)
 
 ### Authorization
 

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanowallet
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace melmccann\cardanowallet\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \melmccann\cardanowallet\ObjectSerializer;
 
 /**
  * ApiJormungandrStakePoolMetrics Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanowallet
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -57,8 +57,8 @@ class ApiJormungandrStakePoolMetrics implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $openAPITypes = [
-        'controlled_stake' => '\OpenAPI\Client\Model\InlineResponse2001Total',
-        'produced_blocks' => '\OpenAPI\Client\Model\ApiStakePoolMetricsProducedBlocks'
+        'controlled_stake' => '\melmccann\cardanowallet\Model\InlineResponse2001Total',
+        'produced_blocks' => '\melmccann\cardanowallet\Model\ApiStakePoolMetricsProducedBlocks'
     ];
 
     /**
@@ -219,7 +219,7 @@ class ApiJormungandrStakePoolMetrics implements ModelInterface, ArrayAccess
     /**
      * Gets controlled_stake
      *
-     * @return \OpenAPI\Client\Model\InlineResponse2001Total
+     * @return \melmccann\cardanowallet\Model\InlineResponse2001Total
      */
     public function getControlledStake()
     {
@@ -229,7 +229,7 @@ class ApiJormungandrStakePoolMetrics implements ModelInterface, ArrayAccess
     /**
      * Sets controlled_stake
      *
-     * @param \OpenAPI\Client\Model\InlineResponse2001Total $controlled_stake controlled_stake
+     * @param \melmccann\cardanowallet\Model\InlineResponse2001Total $controlled_stake controlled_stake
      *
      * @return $this
      */
@@ -243,7 +243,7 @@ class ApiJormungandrStakePoolMetrics implements ModelInterface, ArrayAccess
     /**
      * Gets produced_blocks
      *
-     * @return \OpenAPI\Client\Model\ApiStakePoolMetricsProducedBlocks
+     * @return \melmccann\cardanowallet\Model\ApiStakePoolMetricsProducedBlocks
      */
     public function getProducedBlocks()
     {
@@ -253,7 +253,7 @@ class ApiJormungandrStakePoolMetrics implements ModelInterface, ArrayAccess
     /**
      * Sets produced_blocks
      *
-     * @param \OpenAPI\Client\Model\ApiStakePoolMetricsProducedBlocks $produced_blocks produced_blocks
+     * @param \melmccann\cardanowallet\Model\ApiStakePoolMetricsProducedBlocks $produced_blocks produced_blocks
      *
      * @return $this
      */

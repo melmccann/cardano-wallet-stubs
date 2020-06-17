@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanowallet
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace melmccann\cardanowallet\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \melmccann\cardanowallet\ObjectSerializer;
 
 /**
  * WalletsDelegation Class Doc Comment
  *
  * @category Class
  * @description Delegation settings
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanowallet
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -58,8 +58,8 @@ class WalletsDelegation implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $openAPITypes = [
-        'active' => '\OpenAPI\Client\Model\WalletsDelegationActive',
-        'next' => '\OpenAPI\Client\Model\WalletsDelegationNext[]'
+        'active' => '\melmccann\cardanowallet\Model\WalletsDelegationActive',
+        'next' => '\melmccann\cardanowallet\Model\WalletsDelegationNext[]'
     ];
 
     /**
@@ -220,7 +220,7 @@ class WalletsDelegation implements ModelInterface, ArrayAccess
     /**
      * Gets active
      *
-     * @return \OpenAPI\Client\Model\WalletsDelegationActive
+     * @return \melmccann\cardanowallet\Model\WalletsDelegationActive
      */
     public function getActive()
     {
@@ -230,7 +230,7 @@ class WalletsDelegation implements ModelInterface, ArrayAccess
     /**
      * Sets active
      *
-     * @param \OpenAPI\Client\Model\WalletsDelegationActive $active active
+     * @param \melmccann\cardanowallet\Model\WalletsDelegationActive $active active
      *
      * @return $this
      */
@@ -244,7 +244,7 @@ class WalletsDelegation implements ModelInterface, ArrayAccess
     /**
      * Gets next
      *
-     * @return \OpenAPI\Client\Model\WalletsDelegationNext[]
+     * @return \melmccann\cardanowallet\Model\WalletsDelegationNext[]
      */
     public function getNext()
     {
@@ -254,7 +254,7 @@ class WalletsDelegation implements ModelInterface, ArrayAccess
     /**
      * Sets next
      *
-     * @param \OpenAPI\Client\Model\WalletsDelegationNext[] $next next
+     * @param \melmccann\cardanowallet\Model\WalletsDelegationNext[] $next next
      *
      * @return $this
      */

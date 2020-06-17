@@ -1,4 +1,4 @@
-# OpenAPI\Client\ProxyApi
+# melmccann\cardanowallet\ProxyApi
 
 All URIs are relative to *https://localhost:8090/v2*
 
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 ## postExternalTransaction
 
-> \OpenAPI\Client\Model\InlineResponse2021 postExternalTransaction($body)
+> \melmccann\cardanowallet\Model\InlineResponse2021 postExternalTransaction($body)
 
 Submit External Transaction
 
@@ -23,7 +23,7 @@ Submit External Transaction
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new OpenAPI\Client\Api\ProxyApi(
+$apiInstance = new melmccann\cardanowallet\Api\ProxyApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -48,7 +48,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\InlineResponse2021**](../Model/InlineResponse2021.md)
+[**\melmccann\cardanowallet\Model\InlineResponse2021**](../Model/InlineResponse2021.md)
 
 ### Authorization
 

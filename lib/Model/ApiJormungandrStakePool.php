@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanowallet
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace melmccann\cardanowallet\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \melmccann\cardanowallet\ObjectSerializer;
 
 /**
  * ApiJormungandrStakePool Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanowallet
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -58,11 +58,11 @@ class ApiJormungandrStakePool implements ModelInterface, ArrayAccess
       */
     protected static $openAPITypes = [
         'id' => 'string',
-        'metrics' => '\OpenAPI\Client\Model\ApiJormungandrStakePoolMetrics',
+        'metrics' => '\melmccann\cardanowallet\Model\ApiJormungandrStakePoolMetrics',
         'apparent_performance' => 'float',
-        'cost' => '\OpenAPI\Client\Model\ApiStakePoolCost',
-        'margin' => '\OpenAPI\Client\Model\ApiStakePoolMargin',
-        'metadata' => '\OpenAPI\Client\Model\ApiStakePoolMetadata',
+        'cost' => '\melmccann\cardanowallet\Model\ApiStakePoolCost',
+        'margin' => '\melmccann\cardanowallet\Model\ApiStakePoolMargin',
+        'metadata' => '\melmccann\cardanowallet\Model\ApiStakePoolMetadata',
         'saturation' => 'float',
         'desirability' => 'float'
     ];
@@ -321,7 +321,7 @@ class ApiJormungandrStakePool implements ModelInterface, ArrayAccess
     /**
      * Gets metrics
      *
-     * @return \OpenAPI\Client\Model\ApiJormungandrStakePoolMetrics
+     * @return \melmccann\cardanowallet\Model\ApiJormungandrStakePoolMetrics
      */
     public function getMetrics()
     {
@@ -331,7 +331,7 @@ class ApiJormungandrStakePool implements ModelInterface, ArrayAccess
     /**
      * Sets metrics
      *
-     * @param \OpenAPI\Client\Model\ApiJormungandrStakePoolMetrics $metrics metrics
+     * @param \melmccann\cardanowallet\Model\ApiJormungandrStakePoolMetrics $metrics metrics
      *
      * @return $this
      */
@@ -374,7 +374,7 @@ class ApiJormungandrStakePool implements ModelInterface, ArrayAccess
     /**
      * Gets cost
      *
-     * @return \OpenAPI\Client\Model\ApiStakePoolCost
+     * @return \melmccann\cardanowallet\Model\ApiStakePoolCost
      */
     public function getCost()
     {
@@ -384,7 +384,7 @@ class ApiJormungandrStakePool implements ModelInterface, ArrayAccess
     /**
      * Sets cost
      *
-     * @param \OpenAPI\Client\Model\ApiStakePoolCost $cost cost
+     * @param \melmccann\cardanowallet\Model\ApiStakePoolCost $cost cost
      *
      * @return $this
      */
@@ -398,7 +398,7 @@ class ApiJormungandrStakePool implements ModelInterface, ArrayAccess
     /**
      * Gets margin
      *
-     * @return \OpenAPI\Client\Model\ApiStakePoolMargin
+     * @return \melmccann\cardanowallet\Model\ApiStakePoolMargin
      */
     public function getMargin()
     {
@@ -408,7 +408,7 @@ class ApiJormungandrStakePool implements ModelInterface, ArrayAccess
     /**
      * Sets margin
      *
-     * @param \OpenAPI\Client\Model\ApiStakePoolMargin $margin margin
+     * @param \melmccann\cardanowallet\Model\ApiStakePoolMargin $margin margin
      *
      * @return $this
      */
@@ -422,7 +422,7 @@ class ApiJormungandrStakePool implements ModelInterface, ArrayAccess
     /**
      * Gets metadata
      *
-     * @return \OpenAPI\Client\Model\ApiStakePoolMetadata|null
+     * @return \melmccann\cardanowallet\Model\ApiStakePoolMetadata|null
      */
     public function getMetadata()
     {
@@ -432,7 +432,7 @@ class ApiJormungandrStakePool implements ModelInterface, ArrayAccess
     /**
      * Sets metadata
      *
-     * @param \OpenAPI\Client\Model\ApiStakePoolMetadata|null $metadata metadata
+     * @param \melmccann\cardanowallet\Model\ApiStakePoolMetadata|null $metadata metadata
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **address** | **string** |  | 
-**amount** | [**\OpenAPI\Client\Model\InlineResponse2001Total**](InlineResponse2001Total.md) |  | 
+**amount** | [**\melmccann\cardanowallet\Model\InlineResponse2001Total**](InlineResponse2001Total.md) |  | 
 **id** | **string** | A unique identifier for this transaction | 
 **index** | **int** |  | 
 

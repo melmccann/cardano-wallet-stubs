@@ -1,4 +1,4 @@
-# OpenAPI\Client\ByronAddressesApi
+# melmccann\cardanowallet\ByronAddressesApi
 
 All URIs are relative to *https://localhost:8090/v2*
 
@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 ## createAddress
 
-> \OpenAPI\Client\Model\InlineResponse2003 createAddress($wallet_id, $inline_object10)
+> \melmccann\cardanowallet\Model\InlineResponse2003 createAddress($wallet_id, $inline_object10)
 
 Create Address
 
@@ -25,13 +25,13 @@ Create Address
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new OpenAPI\Client\Api\ByronAddressesApi(
+$apiInstance = new melmccann\cardanowallet\Api\ByronAddressesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $wallet_id = 'wallet_id_example'; // string | 
-$inline_object10 = new \OpenAPI\Client\Model\InlineObject10(); // \OpenAPI\Client\Model\InlineObject10 | 
+$inline_object10 = new \melmccann\cardanowallet\Model\InlineObject10(); // \melmccann\cardanowallet\Model\InlineObject10 | 
 
 try {
     $result = $apiInstance->createAddress($wallet_id, $inline_object10);
@@ -48,11 +48,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **wallet_id** | **string**|  |
- **inline_object10** | [**\OpenAPI\Client\Model\InlineObject10**](../Model/InlineObject10.md)|  |
+ **inline_object10** | [**\melmccann\cardanowallet\Model\InlineObject10**](../Model/InlineObject10.md)|  |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\InlineResponse2003**](../Model/InlineResponse2003.md)
+[**\melmccann\cardanowallet\Model\InlineResponse2003**](../Model/InlineResponse2003.md)
 
 ### Authorization
 
@@ -83,7 +83,7 @@ Import Address
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new OpenAPI\Client\Api\ByronAddressesApi(
+$apiInstance = new melmccann\cardanowallet\Api\ByronAddressesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -127,7 +127,7 @@ No authorization required
 
 ## listByronAddresses
 
-> \OpenAPI\Client\Model\InlineResponse2003[] listByronAddresses($wallet_id, $state)
+> \melmccann\cardanowallet\Model\InlineResponse2003[] listByronAddresses($wallet_id, $state)
 
 List
 
@@ -140,7 +140,7 @@ List
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new OpenAPI\Client\Api\ByronAddressesApi(
+$apiInstance = new melmccann\cardanowallet\Api\ByronAddressesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -167,7 +167,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\InlineResponse2003[]**](../Model/InlineResponse2003.md)
+[**\melmccann\cardanowallet\Model\InlineResponse2003[]**](../Model/InlineResponse2003.md)
 
 ### Authorization
 

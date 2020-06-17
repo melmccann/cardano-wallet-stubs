@@ -1,4 +1,4 @@
-# OpenAPI\Client\CoinSelectionsApi
+# melmccann\cardanowallet\CoinSelectionsApi
 
 All URIs are relative to *https://localhost:8090/v2*
 
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 ## selectCoins
 
-> \OpenAPI\Client\Model\InlineResponse2004 selectCoins($wallet_id, $inline_object6)
+> \melmccann\cardanowallet\Model\InlineResponse2004 selectCoins($wallet_id, $inline_object6)
 
 Random
 
@@ -23,13 +23,13 @@ Random
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new OpenAPI\Client\Api\CoinSelectionsApi(
+$apiInstance = new melmccann\cardanowallet\Api\CoinSelectionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $wallet_id = 'wallet_id_example'; // string | 
-$inline_object6 = new \OpenAPI\Client\Model\InlineObject6(); // \OpenAPI\Client\Model\InlineObject6 | 
+$inline_object6 = new \melmccann\cardanowallet\Model\InlineObject6(); // \melmccann\cardanowallet\Model\InlineObject6 | 
 
 try {
     $result = $apiInstance->selectCoins($wallet_id, $inline_object6);
@@ -46,11 +46,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **wallet_id** | **string**|  |
- **inline_object6** | [**\OpenAPI\Client\Model\InlineObject6**](../Model/InlineObject6.md)|  |
+ **inline_object6** | [**\melmccann\cardanowallet\Model\InlineObject6**](../Model/InlineObject6.md)|  |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\InlineResponse2004**](../Model/InlineResponse2004.md)
+[**\melmccann\cardanowallet\Model\InlineResponse2004**](../Model/InlineResponse2004.md)
 
 ### Authorization
 

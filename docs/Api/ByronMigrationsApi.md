@@ -1,4 +1,4 @@
-# OpenAPI\Client\ByronMigrationsApi
+# melmccann\cardanowallet\ByronMigrationsApi
 
 All URIs are relative to *https://localhost:8090/v2*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 ## getByronWalletMigrationInfo
 
-> \OpenAPI\Client\Model\InlineResponse2005 getByronWalletMigrationInfo($wallet_id)
+> \melmccann\cardanowallet\Model\InlineResponse2005 getByronWalletMigrationInfo($wallet_id)
 
 Calculate Cost
 
@@ -24,7 +24,7 @@ Calculate Cost
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new OpenAPI\Client\Api\ByronMigrationsApi(
+$apiInstance = new melmccann\cardanowallet\Api\ByronMigrationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -49,7 +49,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\InlineResponse2005**](../Model/InlineResponse2005.md)
+[**\melmccann\cardanowallet\Model\InlineResponse2005**](../Model/InlineResponse2005.md)
 
 ### Authorization
 
@@ -67,7 +67,7 @@ No authorization required
 
 ## migrateByronWallet
 
-> \OpenAPI\Client\Model\InlineResponse2002[] migrateByronWallet($wallet_id, $inline_object14)
+> \melmccann\cardanowallet\Model\InlineResponse2002[] migrateByronWallet($wallet_id, $inline_object14)
 
 Migrate
 
@@ -80,13 +80,13 @@ Migrate
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new OpenAPI\Client\Api\ByronMigrationsApi(
+$apiInstance = new melmccann\cardanowallet\Api\ByronMigrationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $wallet_id = 'wallet_id_example'; // string | 
-$inline_object14 = new \OpenAPI\Client\Model\InlineObject14(); // \OpenAPI\Client\Model\InlineObject14 | 
+$inline_object14 = new \melmccann\cardanowallet\Model\InlineObject14(); // \melmccann\cardanowallet\Model\InlineObject14 | 
 
 try {
     $result = $apiInstance->migrateByronWallet($wallet_id, $inline_object14);
@@ -103,11 +103,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **wallet_id** | **string**|  |
- **inline_object14** | [**\OpenAPI\Client\Model\InlineObject14**](../Model/InlineObject14.md)|  |
+ **inline_object14** | [**\melmccann\cardanowallet\Model\InlineObject14**](../Model/InlineObject14.md)|  |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\InlineResponse2002[]**](../Model/InlineResponse2002.md)
+[**\melmccann\cardanowallet\Model\InlineResponse2002[]**](../Model/InlineResponse2002.md)
 
 ### Authorization
 

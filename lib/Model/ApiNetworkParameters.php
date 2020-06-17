@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanowallet
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace melmccann\cardanowallet\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \melmccann\cardanowallet\ObjectSerializer;
 
 /**
  * ApiNetworkParameters Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanowallet
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -59,11 +59,11 @@ class ApiNetworkParameters implements ModelInterface, ArrayAccess
     protected static $openAPITypes = [
         'genesis_block_hash' => 'string',
         'blockchain_start_time' => 'string',
-        'slot_length' => '\OpenAPI\Client\Model\InlineResponse2009SlotLength',
-        'epoch_length' => '\OpenAPI\Client\Model\InlineResponse2009EpochLength',
-        'epoch_stability' => '\OpenAPI\Client\Model\WalletsTipHeight',
-        'active_slot_coefficient' => '\OpenAPI\Client\Model\InlineResponse2009ActiveSlotCoefficient',
-        'decentralization_level' => '\OpenAPI\Client\Model\InlineResponse2009ActiveSlotCoefficient'
+        'slot_length' => '\melmccann\cardanowallet\Model\InlineResponse2009SlotLength',
+        'epoch_length' => '\melmccann\cardanowallet\Model\InlineResponse2009EpochLength',
+        'epoch_stability' => '\melmccann\cardanowallet\Model\WalletsTipHeight',
+        'active_slot_coefficient' => '\melmccann\cardanowallet\Model\InlineResponse2009ActiveSlotCoefficient',
+        'decentralization_level' => '\melmccann\cardanowallet\Model\InlineResponse2009ActiveSlotCoefficient'
     ];
 
     /**
@@ -327,7 +327,7 @@ class ApiNetworkParameters implements ModelInterface, ArrayAccess
     /**
      * Gets slot_length
      *
-     * @return \OpenAPI\Client\Model\InlineResponse2009SlotLength
+     * @return \melmccann\cardanowallet\Model\InlineResponse2009SlotLength
      */
     public function getSlotLength()
     {
@@ -337,7 +337,7 @@ class ApiNetworkParameters implements ModelInterface, ArrayAccess
     /**
      * Sets slot_length
      *
-     * @param \OpenAPI\Client\Model\InlineResponse2009SlotLength $slot_length slot_length
+     * @param \melmccann\cardanowallet\Model\InlineResponse2009SlotLength $slot_length slot_length
      *
      * @return $this
      */
@@ -351,7 +351,7 @@ class ApiNetworkParameters implements ModelInterface, ArrayAccess
     /**
      * Gets epoch_length
      *
-     * @return \OpenAPI\Client\Model\InlineResponse2009EpochLength
+     * @return \melmccann\cardanowallet\Model\InlineResponse2009EpochLength
      */
     public function getEpochLength()
     {
@@ -361,7 +361,7 @@ class ApiNetworkParameters implements ModelInterface, ArrayAccess
     /**
      * Sets epoch_length
      *
-     * @param \OpenAPI\Client\Model\InlineResponse2009EpochLength $epoch_length epoch_length
+     * @param \melmccann\cardanowallet\Model\InlineResponse2009EpochLength $epoch_length epoch_length
      *
      * @return $this
      */
@@ -375,7 +375,7 @@ class ApiNetworkParameters implements ModelInterface, ArrayAccess
     /**
      * Gets epoch_stability
      *
-     * @return \OpenAPI\Client\Model\WalletsTipHeight
+     * @return \melmccann\cardanowallet\Model\WalletsTipHeight
      */
     public function getEpochStability()
     {
@@ -385,7 +385,7 @@ class ApiNetworkParameters implements ModelInterface, ArrayAccess
     /**
      * Sets epoch_stability
      *
-     * @param \OpenAPI\Client\Model\WalletsTipHeight $epoch_stability epoch_stability
+     * @param \melmccann\cardanowallet\Model\WalletsTipHeight $epoch_stability epoch_stability
      *
      * @return $this
      */
@@ -399,7 +399,7 @@ class ApiNetworkParameters implements ModelInterface, ArrayAccess
     /**
      * Gets active_slot_coefficient
      *
-     * @return \OpenAPI\Client\Model\InlineResponse2009ActiveSlotCoefficient
+     * @return \melmccann\cardanowallet\Model\InlineResponse2009ActiveSlotCoefficient
      */
     public function getActiveSlotCoefficient()
     {
@@ -409,7 +409,7 @@ class ApiNetworkParameters implements ModelInterface, ArrayAccess
     /**
      * Sets active_slot_coefficient
      *
-     * @param \OpenAPI\Client\Model\InlineResponse2009ActiveSlotCoefficient $active_slot_coefficient active_slot_coefficient
+     * @param \melmccann\cardanowallet\Model\InlineResponse2009ActiveSlotCoefficient $active_slot_coefficient active_slot_coefficient
      *
      * @return $this
      */
@@ -423,7 +423,7 @@ class ApiNetworkParameters implements ModelInterface, ArrayAccess
     /**
      * Gets decentralization_level
      *
-     * @return \OpenAPI\Client\Model\InlineResponse2009ActiveSlotCoefficient
+     * @return \melmccann\cardanowallet\Model\InlineResponse2009ActiveSlotCoefficient
      */
     public function getDecentralizationLevel()
     {
@@ -433,7 +433,7 @@ class ApiNetworkParameters implements ModelInterface, ArrayAccess
     /**
      * Sets decentralization_level
      *
-     * @param \OpenAPI\Client\Model\InlineResponse2009ActiveSlotCoefficient $decentralization_level decentralization_level
+     * @param \melmccann\cardanowallet\Model\InlineResponse2009ActiveSlotCoefficient $decentralization_level decentralization_level
      *
      * @return $this
      */

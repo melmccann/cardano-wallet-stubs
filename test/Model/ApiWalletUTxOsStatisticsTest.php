@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanowallet
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,7 +27,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace OpenAPI\Client;
+namespace melmccann\cardanowallet;
 
 use PHPUnit\Framework\TestCase;
 
@@ -36,7 +36,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description ApiWalletUTxOsStatistics
- * @package     OpenAPI\Client
+ * @package     melmccann\cardanowallet
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */
@@ -75,13 +75,6 @@ class ApiWalletUTxOsStatisticsTest extends TestCase
      * Test "ApiWalletUTxOsStatistics"
      */
     public function testApiWalletUTxOsStatistics()
-    {
-    }
-
-    /**
-     * Test attribute "total"
-     */
-    public function testPropertyTotal()
     {
     }
 

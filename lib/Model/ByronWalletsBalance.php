@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanowallet
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace melmccann\cardanowallet\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \melmccann\cardanowallet\ObjectSerializer;
 
 /**
  * ByronWalletsBalance Class Doc Comment
  *
  * @category Class
  * @description Byron wallet&#39;s current balance(s)
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanowallet
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -58,8 +58,8 @@ class ByronWalletsBalance implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $openAPITypes = [
-        'available' => '\OpenAPI\Client\Model\WalletsBalanceAvailable',
-        'total' => '\OpenAPI\Client\Model\WalletsBalanceTotal'
+        'available' => '\melmccann\cardanowallet\Model\WalletsBalanceAvailable',
+        'total' => '\melmccann\cardanowallet\Model\WalletsBalanceTotal'
     ];
 
     /**
@@ -220,7 +220,7 @@ class ByronWalletsBalance implements ModelInterface, ArrayAccess
     /**
      * Gets available
      *
-     * @return \OpenAPI\Client\Model\WalletsBalanceAvailable
+     * @return \melmccann\cardanowallet\Model\WalletsBalanceAvailable
      */
     public function getAvailable()
     {
@@ -230,7 +230,7 @@ class ByronWalletsBalance implements ModelInterface, ArrayAccess
     /**
      * Sets available
      *
-     * @param \OpenAPI\Client\Model\WalletsBalanceAvailable $available available
+     * @param \melmccann\cardanowallet\Model\WalletsBalanceAvailable $available available
      *
      * @return $this
      */
@@ -244,7 +244,7 @@ class ByronWalletsBalance implements ModelInterface, ArrayAccess
     /**
      * Gets total
      *
-     * @return \OpenAPI\Client\Model\WalletsBalanceTotal
+     * @return \melmccann\cardanowallet\Model\WalletsBalanceTotal
      */
     public function getTotal()
     {
@@ -254,7 +254,7 @@ class ByronWalletsBalance implements ModelInterface, ArrayAccess
     /**
      * Sets total
      *
-     * @param \OpenAPI\Client\Model\WalletsBalanceTotal $total total
+     * @param \melmccann\cardanowallet\Model\WalletsBalanceTotal $total total
      *
      * @return $this
      */

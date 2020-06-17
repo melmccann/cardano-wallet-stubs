@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanowallet
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace melmccann\cardanowallet\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \melmccann\cardanowallet\ObjectSerializer;
 
 /**
  * InlineResponse2002 Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanowallet
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -58,13 +58,13 @@ class InlineResponse2002 implements ModelInterface, ArrayAccess
       */
     protected static $openAPITypes = [
         'id' => 'string',
-        'amount' => '\OpenAPI\Client\Model\InlineResponse2001Total',
-        'inserted_at' => '\OpenAPI\Client\Model\WalletsWalletIdTransactionsInsertedAt',
-        'pending_since' => '\OpenAPI\Client\Model\WalletsWalletIdTransactionsPendingSince',
-        'depth' => '\OpenAPI\Client\Model\WalletsWalletIdTransactionsDepth',
+        'amount' => '\melmccann\cardanowallet\Model\InlineResponse2001Total',
+        'inserted_at' => '\melmccann\cardanowallet\Model\WalletsWalletIdTransactionsInsertedAt',
+        'pending_since' => '\melmccann\cardanowallet\Model\WalletsWalletIdTransactionsPendingSince',
+        'depth' => '\melmccann\cardanowallet\Model\WalletsWalletIdTransactionsDepth',
         'direction' => 'string',
-        'inputs' => '\OpenAPI\Client\Model\WalletsWalletIdTransactionsInputs[]',
-        'outputs' => '\OpenAPI\Client\Model\WalletsWalletIdTransactionsOutputs[]',
+        'inputs' => '\melmccann\cardanowallet\Model\WalletsWalletIdTransactionsInputs[]',
+        'outputs' => '\melmccann\cardanowallet\Model\WalletsWalletIdTransactionsOutputs[]',
         'status' => 'string'
     ];
 
@@ -358,7 +358,7 @@ class InlineResponse2002 implements ModelInterface, ArrayAccess
     /**
      * Gets amount
      *
-     * @return \OpenAPI\Client\Model\InlineResponse2001Total
+     * @return \melmccann\cardanowallet\Model\InlineResponse2001Total
      */
     public function getAmount()
     {
@@ -368,7 +368,7 @@ class InlineResponse2002 implements ModelInterface, ArrayAccess
     /**
      * Sets amount
      *
-     * @param \OpenAPI\Client\Model\InlineResponse2001Total $amount amount
+     * @param \melmccann\cardanowallet\Model\InlineResponse2001Total $amount amount
      *
      * @return $this
      */
@@ -382,7 +382,7 @@ class InlineResponse2002 implements ModelInterface, ArrayAccess
     /**
      * Gets inserted_at
      *
-     * @return \OpenAPI\Client\Model\WalletsWalletIdTransactionsInsertedAt|null
+     * @return \melmccann\cardanowallet\Model\WalletsWalletIdTransactionsInsertedAt|null
      */
     public function getInsertedAt()
     {
@@ -392,7 +392,7 @@ class InlineResponse2002 implements ModelInterface, ArrayAccess
     /**
      * Sets inserted_at
      *
-     * @param \OpenAPI\Client\Model\WalletsWalletIdTransactionsInsertedAt|null $inserted_at inserted_at
+     * @param \melmccann\cardanowallet\Model\WalletsWalletIdTransactionsInsertedAt|null $inserted_at inserted_at
      *
      * @return $this
      */
@@ -406,7 +406,7 @@ class InlineResponse2002 implements ModelInterface, ArrayAccess
     /**
      * Gets pending_since
      *
-     * @return \OpenAPI\Client\Model\WalletsWalletIdTransactionsPendingSince|null
+     * @return \melmccann\cardanowallet\Model\WalletsWalletIdTransactionsPendingSince|null
      */
     public function getPendingSince()
     {
@@ -416,7 +416,7 @@ class InlineResponse2002 implements ModelInterface, ArrayAccess
     /**
      * Sets pending_since
      *
-     * @param \OpenAPI\Client\Model\WalletsWalletIdTransactionsPendingSince|null $pending_since pending_since
+     * @param \melmccann\cardanowallet\Model\WalletsWalletIdTransactionsPendingSince|null $pending_since pending_since
      *
      * @return $this
      */
@@ -430,7 +430,7 @@ class InlineResponse2002 implements ModelInterface, ArrayAccess
     /**
      * Gets depth
      *
-     * @return \OpenAPI\Client\Model\WalletsWalletIdTransactionsDepth|null
+     * @return \melmccann\cardanowallet\Model\WalletsWalletIdTransactionsDepth|null
      */
     public function getDepth()
     {
@@ -440,7 +440,7 @@ class InlineResponse2002 implements ModelInterface, ArrayAccess
     /**
      * Sets depth
      *
-     * @param \OpenAPI\Client\Model\WalletsWalletIdTransactionsDepth|null $depth depth
+     * @param \melmccann\cardanowallet\Model\WalletsWalletIdTransactionsDepth|null $depth depth
      *
      * @return $this
      */
@@ -487,7 +487,7 @@ class InlineResponse2002 implements ModelInterface, ArrayAccess
     /**
      * Gets inputs
      *
-     * @return \OpenAPI\Client\Model\WalletsWalletIdTransactionsInputs[]
+     * @return \melmccann\cardanowallet\Model\WalletsWalletIdTransactionsInputs[]
      */
     public function getInputs()
     {
@@ -497,7 +497,7 @@ class InlineResponse2002 implements ModelInterface, ArrayAccess
     /**
      * Sets inputs
      *
-     * @param \OpenAPI\Client\Model\WalletsWalletIdTransactionsInputs[] $inputs A list of transaction inputs
+     * @param \melmccann\cardanowallet\Model\WalletsWalletIdTransactionsInputs[] $inputs A list of transaction inputs
      *
      * @return $this
      */
@@ -511,7 +511,7 @@ class InlineResponse2002 implements ModelInterface, ArrayAccess
     /**
      * Gets outputs
      *
-     * @return \OpenAPI\Client\Model\WalletsWalletIdTransactionsOutputs[]
+     * @return \melmccann\cardanowallet\Model\WalletsWalletIdTransactionsOutputs[]
      */
     public function getOutputs()
     {
@@ -521,7 +521,7 @@ class InlineResponse2002 implements ModelInterface, ArrayAccess
     /**
      * Sets outputs
      *
-     * @param \OpenAPI\Client\Model\WalletsWalletIdTransactionsOutputs[] $outputs A list of target outputs
+     * @param \melmccann\cardanowallet\Model\WalletsWalletIdTransactionsOutputs[] $outputs A list of target outputs
      *
      * @return $this
      */

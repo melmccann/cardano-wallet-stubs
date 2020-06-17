@@ -1,4 +1,4 @@
-# OpenAPI\Client\TransactionsApi
+# melmccann\cardanowallet\TransactionsApi
 
 All URIs are relative to *https://localhost:8090/v2*
 
@@ -26,7 +26,7 @@ Forget
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new OpenAPI\Client\Api\TransactionsApi(
+$apiInstance = new melmccann\cardanowallet\Api\TransactionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -70,7 +70,7 @@ No authorization required
 
 ## listTransactions
 
-> \OpenAPI\Client\Model\InlineResponse2002[] listTransactions($wallet_id, $start, $end, $order)
+> \melmccann\cardanowallet\Model\InlineResponse2002[] listTransactions($wallet_id, $start, $end, $order)
 
 List
 
@@ -83,7 +83,7 @@ List
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new OpenAPI\Client\Api\TransactionsApi(
+$apiInstance = new melmccann\cardanowallet\Api\TransactionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -114,7 +114,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\InlineResponse2002[]**](../Model/InlineResponse2002.md)
+[**\melmccann\cardanowallet\Model\InlineResponse2002[]**](../Model/InlineResponse2002.md)
 
 ### Authorization
 
@@ -132,7 +132,7 @@ No authorization required
 
 ## postTransaction
 
-> \OpenAPI\Client\Model\InlineResponse2002 postTransaction($wallet_id, $inline_object2)
+> \melmccann\cardanowallet\Model\InlineResponse2002 postTransaction($wallet_id, $inline_object2)
 
 Create
 
@@ -145,13 +145,13 @@ Create
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new OpenAPI\Client\Api\TransactionsApi(
+$apiInstance = new melmccann\cardanowallet\Api\TransactionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $wallet_id = 'wallet_id_example'; // string | 
-$inline_object2 = new \OpenAPI\Client\Model\InlineObject2(); // \OpenAPI\Client\Model\InlineObject2 | 
+$inline_object2 = new \melmccann\cardanowallet\Model\InlineObject2(); // \melmccann\cardanowallet\Model\InlineObject2 | 
 
 try {
     $result = $apiInstance->postTransaction($wallet_id, $inline_object2);
@@ -168,11 +168,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **wallet_id** | **string**|  |
- **inline_object2** | [**\OpenAPI\Client\Model\InlineObject2**](../Model/InlineObject2.md)|  |
+ **inline_object2** | [**\melmccann\cardanowallet\Model\InlineObject2**](../Model/InlineObject2.md)|  |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\InlineResponse2002**](../Model/InlineResponse2002.md)
+[**\melmccann\cardanowallet\Model\InlineResponse2002**](../Model/InlineResponse2002.md)
 
 ### Authorization
 
@@ -190,7 +190,7 @@ No authorization required
 
 ## postTransactionFee
 
-> \OpenAPI\Client\Model\InlineResponse202 postTransactionFee($wallet_id, $inline_object3)
+> \melmccann\cardanowallet\Model\InlineResponse202 postTransactionFee($wallet_id, $inline_object3)
 
 Estimate Fee
 
@@ -203,13 +203,13 @@ Estimate Fee
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new OpenAPI\Client\Api\TransactionsApi(
+$apiInstance = new melmccann\cardanowallet\Api\TransactionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $wallet_id = 'wallet_id_example'; // string | 
-$inline_object3 = new \OpenAPI\Client\Model\InlineObject3(); // \OpenAPI\Client\Model\InlineObject3 | 
+$inline_object3 = new \melmccann\cardanowallet\Model\InlineObject3(); // \melmccann\cardanowallet\Model\InlineObject3 | 
 
 try {
     $result = $apiInstance->postTransactionFee($wallet_id, $inline_object3);
@@ -226,11 +226,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **wallet_id** | **string**|  |
- **inline_object3** | [**\OpenAPI\Client\Model\InlineObject3**](../Model/InlineObject3.md)|  |
+ **inline_object3** | [**\melmccann\cardanowallet\Model\InlineObject3**](../Model/InlineObject3.md)|  |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\InlineResponse202**](../Model/InlineResponse202.md)
+[**\melmccann\cardanowallet\Model\InlineResponse202**](../Model/InlineResponse202.md)
 
 ### Authorization
 

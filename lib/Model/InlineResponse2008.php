@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanowallet
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace melmccann\cardanowallet\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \melmccann\cardanowallet\ObjectSerializer;
 
 /**
  * InlineResponse2008 Class Doc Comment
  *
  * @category Class
  * @description [Network Time Protocol](https://en.wikipedia.org/wiki/Network_Time_Protocol) information of the server.  **Important:** This piece of information only makes sense when the server runs on the same host machine as the node.
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanowallet
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -59,7 +59,7 @@ class InlineResponse2008 implements ModelInterface, ArrayAccess
       */
     protected static $openAPITypes = [
         'status' => 'string',
-        'offset' => '\OpenAPI\Client\Model\InlineResponse2008Offset'
+        'offset' => '\melmccann\cardanowallet\Model\InlineResponse2008Offset'
     ];
 
     /**
@@ -275,7 +275,7 @@ class InlineResponse2008 implements ModelInterface, ArrayAccess
     /**
      * Gets offset
      *
-     * @return \OpenAPI\Client\Model\InlineResponse2008Offset|null
+     * @return \melmccann\cardanowallet\Model\InlineResponse2008Offset|null
      */
     public function getOffset()
     {
@@ -285,7 +285,7 @@ class InlineResponse2008 implements ModelInterface, ArrayAccess
     /**
      * Sets offset
      *
-     * @param \OpenAPI\Client\Model\InlineResponse2008Offset|null $offset offset
+     * @param \melmccann\cardanowallet\Model\InlineResponse2008Offset|null $offset offset
      *
      * @return $this
      */

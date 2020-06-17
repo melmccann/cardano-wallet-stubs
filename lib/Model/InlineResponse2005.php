@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanowallet
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace melmccann\cardanowallet\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \melmccann\cardanowallet\ObjectSerializer;
 
 /**
  * InlineResponse2005 Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanowallet
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -57,7 +57,7 @@ class InlineResponse2005 implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $openAPITypes = [
-        'migration_cost' => '\OpenAPI\Client\Model\InlineResponse2001Total'
+        'migration_cost' => '\melmccann\cardanowallet\Model\InlineResponse2001Total'
     ];
 
     /**
@@ -210,7 +210,7 @@ class InlineResponse2005 implements ModelInterface, ArrayAccess
     /**
      * Gets migration_cost
      *
-     * @return \OpenAPI\Client\Model\InlineResponse2001Total
+     * @return \melmccann\cardanowallet\Model\InlineResponse2001Total
      */
     public function getMigrationCost()
     {
@@ -220,7 +220,7 @@ class InlineResponse2005 implements ModelInterface, ArrayAccess
     /**
      * Sets migration_cost
      *
-     * @param \OpenAPI\Client\Model\InlineResponse2001Total $migration_cost migration_cost
+     * @param \melmccann\cardanowallet\Model\InlineResponse2001Total $migration_cost migration_cost
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanowallet
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace melmccann\cardanowallet\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \melmccann\cardanowallet\ObjectSerializer;
 
 /**
  * InlineResponse2004 Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanowallet
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -57,8 +57,8 @@ class InlineResponse2004 implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $openAPITypes = [
-        'inputs' => '\OpenAPI\Client\Model\InlineResponse2004Inputs[]',
-        'outputs' => '\OpenAPI\Client\Model\WalletsWalletIdTransactionsOutputs[]'
+        'inputs' => '\melmccann\cardanowallet\Model\InlineResponse2004Inputs[]',
+        'outputs' => '\melmccann\cardanowallet\Model\WalletsWalletIdTransactionsOutputs[]'
     ];
 
     /**
@@ -219,7 +219,7 @@ class InlineResponse2004 implements ModelInterface, ArrayAccess
     /**
      * Gets inputs
      *
-     * @return \OpenAPI\Client\Model\InlineResponse2004Inputs[]
+     * @return \melmccann\cardanowallet\Model\InlineResponse2004Inputs[]
      */
     public function getInputs()
     {
@@ -229,7 +229,7 @@ class InlineResponse2004 implements ModelInterface, ArrayAccess
     /**
      * Sets inputs
      *
-     * @param \OpenAPI\Client\Model\InlineResponse2004Inputs[] $inputs A list of transaction inputs
+     * @param \melmccann\cardanowallet\Model\InlineResponse2004Inputs[] $inputs A list of transaction inputs
      *
      * @return $this
      */
@@ -243,7 +243,7 @@ class InlineResponse2004 implements ModelInterface, ArrayAccess
     /**
      * Gets outputs
      *
-     * @return \OpenAPI\Client\Model\WalletsWalletIdTransactionsOutputs[]
+     * @return \melmccann\cardanowallet\Model\WalletsWalletIdTransactionsOutputs[]
      */
     public function getOutputs()
     {
@@ -253,7 +253,7 @@ class InlineResponse2004 implements ModelInterface, ArrayAccess
     /**
      * Sets outputs
      *
-     * @param \OpenAPI\Client\Model\WalletsWalletIdTransactionsOutputs[] $outputs A list of target outputs
+     * @param \melmccann\cardanowallet\Model\WalletsWalletIdTransactionsOutputs[] $outputs A list of target outputs
      *
      * @return $this
      */

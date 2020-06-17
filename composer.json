@@ -1,5 +1,6 @@
 {
-    "name": "melmccann/cardano-wallet-stubs",
+    "name": "GIT_USER_ID/GIT_REPO_ID",
+    "version": "0.0.1",
     "description": "<p align=\"right\"><img style=\"position: relative; top: -10em; margin-bottom: -12em;\" width=\"20%\" src=\"https://cardanodocs.com/img/cardano.png\"></img></p>",
     "keywords": [
         "openapitools",
@@ -31,9 +32,9 @@
         "friendsofphp/php-cs-fixer": "~2.12"
     },
     "autoload": {
-        "psr-4": { "OpenAPI\\Client\\" : "lib/" }
+        "psr-4": { "melmccann\\cardanowallet\\" : "lib/" }
     },
     "autoload-dev": {
-        "psr-4": { "OpenAPI\\Client\\" : "test/" }
+        "psr-4": { "melmccann\\cardanowallet\\" : "test/" }
     }
 }

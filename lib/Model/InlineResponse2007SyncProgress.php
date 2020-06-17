@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanowallet
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace melmccann\cardanowallet\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \melmccann\cardanowallet\ObjectSerializer;
 
 /**
  * InlineResponse2007SyncProgress Class Doc Comment
  *
  * @category Class
  * @description Estimated synchronization progress of the node with the underlying network. Note that this may change quite arbitrarily as the node may switch to shorter or longer chain forks.
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanowallet
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -59,7 +59,7 @@ class InlineResponse2007SyncProgress implements ModelInterface, ArrayAccess
       */
     protected static $openAPITypes = [
         'status' => 'string',
-        'progress' => '\OpenAPI\Client\Model\WalletsStateProgress'
+        'progress' => '\melmccann\cardanowallet\Model\WalletsStateProgress'
     ];
 
     /**
@@ -275,7 +275,7 @@ class InlineResponse2007SyncProgress implements ModelInterface, ArrayAccess
     /**
      * Gets progress
      *
-     * @return \OpenAPI\Client\Model\WalletsStateProgress|null
+     * @return \melmccann\cardanowallet\Model\WalletsStateProgress|null
      */
     public function getProgress()
     {
@@ -285,7 +285,7 @@ class InlineResponse2007SyncProgress implements ModelInterface, ArrayAccess
     /**
      * Sets progress
      *
-     * @param \OpenAPI\Client\Model\WalletsStateProgress|null $progress progress
+     * @param \melmccann\cardanowallet\Model\WalletsStateProgress|null $progress progress
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanowallet
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace melmccann\cardanowallet\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \melmccann\cardanowallet\ObjectSerializer;
 
 /**
  * ApiByronWallet Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanowallet
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -58,12 +58,12 @@ class ApiByronWallet implements ModelInterface, ArrayAccess
       */
     protected static $openAPITypes = [
         'id' => 'string',
-        'balance' => '\OpenAPI\Client\Model\ByronWalletsBalance',
+        'balance' => '\melmccann\cardanowallet\Model\ByronWalletsBalance',
         'discovery' => 'string',
         'name' => 'string',
-        'passphrase' => '\OpenAPI\Client\Model\WalletsPassphrase',
-        'state' => '\OpenAPI\Client\Model\WalletsState',
-        'tip' => '\OpenAPI\Client\Model\WalletsTip'
+        'passphrase' => '\melmccann\cardanowallet\Model\WalletsPassphrase',
+        'state' => '\melmccann\cardanowallet\Model\WalletsState',
+        'tip' => '\melmccann\cardanowallet\Model\WalletsTip'
     ];
 
     /**
@@ -331,7 +331,7 @@ class ApiByronWallet implements ModelInterface, ArrayAccess
     /**
      * Gets balance
      *
-     * @return \OpenAPI\Client\Model\ByronWalletsBalance
+     * @return \melmccann\cardanowallet\Model\ByronWalletsBalance
      */
     public function getBalance()
     {
@@ -341,7 +341,7 @@ class ApiByronWallet implements ModelInterface, ArrayAccess
     /**
      * Sets balance
      *
-     * @param \OpenAPI\Client\Model\ByronWalletsBalance $balance balance
+     * @param \melmccann\cardanowallet\Model\ByronWalletsBalance $balance balance
      *
      * @return $this
      */
@@ -419,7 +419,7 @@ class ApiByronWallet implements ModelInterface, ArrayAccess
     /**
      * Gets passphrase
      *
-     * @return \OpenAPI\Client\Model\WalletsPassphrase|null
+     * @return \melmccann\cardanowallet\Model\WalletsPassphrase|null
      */
     public function getPassphrase()
     {
@@ -429,7 +429,7 @@ class ApiByronWallet implements ModelInterface, ArrayAccess
     /**
      * Sets passphrase
      *
-     * @param \OpenAPI\Client\Model\WalletsPassphrase|null $passphrase passphrase
+     * @param \melmccann\cardanowallet\Model\WalletsPassphrase|null $passphrase passphrase
      *
      * @return $this
      */
@@ -443,7 +443,7 @@ class ApiByronWallet implements ModelInterface, ArrayAccess
     /**
      * Gets state
      *
-     * @return \OpenAPI\Client\Model\WalletsState
+     * @return \melmccann\cardanowallet\Model\WalletsState
      */
     public function getState()
     {
@@ -453,7 +453,7 @@ class ApiByronWallet implements ModelInterface, ArrayAccess
     /**
      * Sets state
      *
-     * @param \OpenAPI\Client\Model\WalletsState $state state
+     * @param \melmccann\cardanowallet\Model\WalletsState $state state
      *
      * @return $this
      */
@@ -467,7 +467,7 @@ class ApiByronWallet implements ModelInterface, ArrayAccess
     /**
      * Gets tip
      *
-     * @return \OpenAPI\Client\Model\WalletsTip
+     * @return \melmccann\cardanowallet\Model\WalletsTip
      */
     public function getTip()
     {
@@ -477,7 +477,7 @@ class ApiByronWallet implements ModelInterface, ArrayAccess
     /**
      * Sets tip
      *
-     * @param \OpenAPI\Client\Model\WalletsTip $tip tip
+     * @param \melmccann\cardanowallet\Model\WalletsTip $tip tip
      *
      * @return $this
      */

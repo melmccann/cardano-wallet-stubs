@@ -1,4 +1,4 @@
-# OpenAPI\Client\WalletsApi
+# melmccann\cardanowallet\WalletsApi
 
 All URIs are relative to *https://localhost:8090/v2*
 
@@ -29,7 +29,7 @@ Delete
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new OpenAPI\Client\Api\WalletsApi(
+$apiInstance = new melmccann\cardanowallet\Api\WalletsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -71,7 +71,7 @@ No authorization required
 
 ## getUTxOsStatistics
 
-> \OpenAPI\Client\Model\InlineResponse2001 getUTxOsStatistics($wallet_id)
+> \melmccann\cardanowallet\Model\InlineResponse2001 getUTxOsStatistics($wallet_id)
 
 UTxO Statistics
 
@@ -84,7 +84,7 @@ UTxO Statistics
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new OpenAPI\Client\Api\WalletsApi(
+$apiInstance = new melmccann\cardanowallet\Api\WalletsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -109,7 +109,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\InlineResponse2001**](../Model/InlineResponse2001.md)
+[**\melmccann\cardanowallet\Model\InlineResponse2001**](../Model/InlineResponse2001.md)
 
 ### Authorization
 
@@ -127,7 +127,7 @@ No authorization required
 
 ## getWallet
 
-> \OpenAPI\Client\Model\InlineResponse200 getWallet($wallet_id)
+> \melmccann\cardanowallet\Model\InlineResponse200 getWallet($wallet_id)
 
 Get
 
@@ -140,7 +140,7 @@ Get
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new OpenAPI\Client\Api\WalletsApi(
+$apiInstance = new melmccann\cardanowallet\Api\WalletsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -165,7 +165,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\melmccann\cardanowallet\Model\InlineResponse200**](../Model/InlineResponse200.md)
 
 ### Authorization
 
@@ -183,7 +183,7 @@ No authorization required
 
 ## listWallets
 
-> \OpenAPI\Client\Model\InlineResponse200[] listWallets()
+> \melmccann\cardanowallet\Model\InlineResponse200[] listWallets()
 
 List
 
@@ -196,7 +196,7 @@ List
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new OpenAPI\Client\Api\WalletsApi(
+$apiInstance = new melmccann\cardanowallet\Api\WalletsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -217,7 +217,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\OpenAPI\Client\Model\InlineResponse200[]**](../Model/InlineResponse200.md)
+[**\melmccann\cardanowallet\Model\InlineResponse200[]**](../Model/InlineResponse200.md)
 
 ### Authorization
 
@@ -235,7 +235,7 @@ No authorization required
 
 ## postWallet
 
-> \OpenAPI\Client\Model\InlineResponse200 postWallet($unknown_base_type)
+> \melmccann\cardanowallet\Model\InlineResponse200 postWallet($unknown_base_type)
 
 Create / Restore
 
@@ -248,12 +248,12 @@ Create / Restore
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new OpenAPI\Client\Api\WalletsApi(
+$apiInstance = new melmccann\cardanowallet\Api\WalletsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$unknown_base_type = new \OpenAPI\Client\Model\UNKNOWN_BASE_TYPE(); // \OpenAPI\Client\Model\UNKNOWN_BASE_TYPE | 
+$unknown_base_type = new \melmccann\cardanowallet\Model\UNKNOWN_BASE_TYPE(); // \melmccann\cardanowallet\Model\UNKNOWN_BASE_TYPE | 
 
 try {
     $result = $apiInstance->postWallet($unknown_base_type);
@@ -269,11 +269,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **unknown_base_type** | [**\OpenAPI\Client\Model\UNKNOWN_BASE_TYPE**](../Model/UNKNOWN_BASE_TYPE.md)|  |
+ **unknown_base_type** | [**\melmccann\cardanowallet\Model\UNKNOWN_BASE_TYPE**](../Model/UNKNOWN_BASE_TYPE.md)|  |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\melmccann\cardanowallet\Model\InlineResponse200**](../Model/InlineResponse200.md)
 
 ### Authorization
 
@@ -291,7 +291,7 @@ No authorization required
 
 ## putWallet
 
-> \OpenAPI\Client\Model\InlineResponse200 putWallet($wallet_id, $inline_object)
+> \melmccann\cardanowallet\Model\InlineResponse200 putWallet($wallet_id, $inline_object)
 
 Update Metadata
 
@@ -304,13 +304,13 @@ Update Metadata
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new OpenAPI\Client\Api\WalletsApi(
+$apiInstance = new melmccann\cardanowallet\Api\WalletsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $wallet_id = 'wallet_id_example'; // string | 
-$inline_object = new \OpenAPI\Client\Model\InlineObject(); // \OpenAPI\Client\Model\InlineObject | 
+$inline_object = new \melmccann\cardanowallet\Model\InlineObject(); // \melmccann\cardanowallet\Model\InlineObject | 
 
 try {
     $result = $apiInstance->putWallet($wallet_id, $inline_object);
@@ -327,11 +327,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **wallet_id** | **string**|  |
- **inline_object** | [**\OpenAPI\Client\Model\InlineObject**](../Model/InlineObject.md)|  |
+ **inline_object** | [**\melmccann\cardanowallet\Model\InlineObject**](../Model/InlineObject.md)|  |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\melmccann\cardanowallet\Model\InlineResponse200**](../Model/InlineResponse200.md)
 
 ### Authorization
 
@@ -362,13 +362,13 @@ Update Passphrase
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new OpenAPI\Client\Api\WalletsApi(
+$apiInstance = new melmccann\cardanowallet\Api\WalletsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $wallet_id = 'wallet_id_example'; // string | 
-$inline_object1 = new \OpenAPI\Client\Model\InlineObject1(); // \OpenAPI\Client\Model\InlineObject1 | 
+$inline_object1 = new \melmccann\cardanowallet\Model\InlineObject1(); // \melmccann\cardanowallet\Model\InlineObject1 | 
 
 try {
     $apiInstance->putWalletPassphrase($wallet_id, $inline_object1);
@@ -384,7 +384,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **wallet_id** | **string**|  |
- **inline_object1** | [**\OpenAPI\Client\Model\InlineObject1**](../Model/InlineObject1.md)|  |
+ **inline_object1** | [**\melmccann\cardanowallet\Model\InlineObject1**](../Model/InlineObject1.md)|  |
 
 ### Return type
 

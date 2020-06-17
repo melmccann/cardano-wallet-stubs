@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanowallet
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,7 +27,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace OpenAPI\Client;
+namespace melmccann\cardanowallet;
 
 use PHPUnit\Framework\TestCase;
 
@@ -36,7 +36,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description ApiWalletOrAccountPostData
- * @package     OpenAPI\Client
+ * @package     melmccann\cardanowallet
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */
@@ -75,48 +75,6 @@ class ApiWalletOrAccountPostDataTest extends TestCase
      * Test "ApiWalletOrAccountPostData"
      */
     public function testApiWalletOrAccountPostData()
-    {
-    }
-
-    /**
-     * Test attribute "name"
-     */
-    public function testPropertyName()
-    {
-    }
-
-    /**
-     * Test attribute "mnemonic_sentence"
-     */
-    public function testPropertyMnemonicSentence()
-    {
-    }
-
-    /**
-     * Test attribute "mnemonic_second_factor"
-     */
-    public function testPropertyMnemonicSecondFactor()
-    {
-    }
-
-    /**
-     * Test attribute "passphrase"
-     */
-    public function testPropertyPassphrase()
-    {
-    }
-
-    /**
-     * Test attribute "address_pool_gap"
-     */
-    public function testPropertyAddressPoolGap()
-    {
-    }
-
-    /**
-     * Test attribute "account_public_key"
-     */
-    public function testPropertyAccountPublicKey()
     {
     }
 }

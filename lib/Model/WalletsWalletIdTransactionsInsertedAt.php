@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanowallet
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace melmccann\cardanowallet\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \melmccann\cardanowallet\ObjectSerializer;
 
 /**
  * WalletsWalletIdTransactionsInsertedAt Class Doc Comment
  *
  * @category Class
  * @description &lt;span style&#x3D;\&quot;position: relative; left: 35px; top: -21px; vertical-align: middle; background-color: rgba(142, 142, 220, 0.05); color: rgba(50, 50, 159, 0.9); margin: 0 5px; padding: 0 5px; border: 1px solid rgba(50, 50, 159, 0.1); line-height: 20px; font-size: 13px; border-radius: 2px;\&quot;&gt; &lt;strong&gt;if:&lt;/strong&gt; status &#x3D;&#x3D; in_ledger &lt;/span&gt;&lt;br/&gt; Absolute time at which the transaction was inserted in a block.
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanowallet
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -59,7 +59,7 @@ class WalletsWalletIdTransactionsInsertedAt implements ModelInterface, ArrayAcce
       */
     protected static $openAPITypes = [
         'time' => 'string',
-        'block' => '\OpenAPI\Client\Model\WalletsTip'
+        'block' => '\melmccann\cardanowallet\Model\WalletsTip'
     ];
 
     /**
@@ -244,7 +244,7 @@ class WalletsWalletIdTransactionsInsertedAt implements ModelInterface, ArrayAcce
     /**
      * Gets block
      *
-     * @return \OpenAPI\Client\Model\WalletsTip
+     * @return \melmccann\cardanowallet\Model\WalletsTip
      */
     public function getBlock()
     {
@@ -254,7 +254,7 @@ class WalletsWalletIdTransactionsInsertedAt implements ModelInterface, ArrayAcce
     /**
      * Sets block
      *
-     * @param \OpenAPI\Client\Model\WalletsTip $block block
+     * @param \melmccann\cardanowallet\Model\WalletsTip $block block
      *
      * @return $this
      */

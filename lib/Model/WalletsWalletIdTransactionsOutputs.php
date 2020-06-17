@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanowallet
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace melmccann\cardanowallet\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \melmccann\cardanowallet\ObjectSerializer;
 
 /**
  * WalletsWalletIdTransactionsOutputs Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanowallet
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -58,7 +58,7 @@ class WalletsWalletIdTransactionsOutputs implements ModelInterface, ArrayAccess
       */
     protected static $openAPITypes = [
         'address' => 'string',
-        'amount' => '\OpenAPI\Client\Model\InlineResponse2001Total'
+        'amount' => '\melmccann\cardanowallet\Model\InlineResponse2001Total'
     ];
 
     /**
@@ -243,7 +243,7 @@ class WalletsWalletIdTransactionsOutputs implements ModelInterface, ArrayAccess
     /**
      * Gets amount
      *
-     * @return \OpenAPI\Client\Model\InlineResponse2001Total
+     * @return \melmccann\cardanowallet\Model\InlineResponse2001Total
      */
     public function getAmount()
     {
@@ -253,7 +253,7 @@ class WalletsWalletIdTransactionsOutputs implements ModelInterface, ArrayAccess
     /**
      * Sets amount
      *
-     * @param \OpenAPI\Client\Model\InlineResponse2001Total $amount amount
+     * @param \melmccann\cardanowallet\Model\InlineResponse2001Total $amount amount
      *
      * @return $this
      */

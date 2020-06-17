@@ -1,4 +1,4 @@
-# OpenAPI\Client\StakePoolsApi
+# melmccann\cardanowallet\StakePoolsApi
 
 All URIs are relative to *https://localhost:8090/v2*
 
@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 ## getDelegationFee
 
-> \OpenAPI\Client\Model\InlineResponse202 getDelegationFee($wallet_id)
+> \melmccann\cardanowallet\Model\InlineResponse202 getDelegationFee($wallet_id)
 
 Estimate Fee
 
@@ -26,7 +26,7 @@ Estimate Fee
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new OpenAPI\Client\Api\StakePoolsApi(
+$apiInstance = new melmccann\cardanowallet\Api\StakePoolsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -51,7 +51,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\InlineResponse202**](../Model/InlineResponse202.md)
+[**\melmccann\cardanowallet\Model\InlineResponse202**](../Model/InlineResponse202.md)
 
 ### Authorization
 
@@ -69,7 +69,7 @@ No authorization required
 
 ## joinStakePool
 
-> \OpenAPI\Client\Model\InlineResponse2002 joinStakePool($stake_pool_id, $wallet_id, $inline_object4)
+> \melmccann\cardanowallet\Model\InlineResponse2002 joinStakePool($stake_pool_id, $wallet_id, $inline_object4)
 
 Join
 
@@ -82,14 +82,14 @@ Join
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new OpenAPI\Client\Api\StakePoolsApi(
+$apiInstance = new melmccann\cardanowallet\Api\StakePoolsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $stake_pool_id = 'stake_pool_id_example'; // string | 
 $wallet_id = 'wallet_id_example'; // string | 
-$inline_object4 = new \OpenAPI\Client\Model\InlineObject4(); // \OpenAPI\Client\Model\InlineObject4 | 
+$inline_object4 = new \melmccann\cardanowallet\Model\InlineObject4(); // \melmccann\cardanowallet\Model\InlineObject4 | 
 
 try {
     $result = $apiInstance->joinStakePool($stake_pool_id, $wallet_id, $inline_object4);
@@ -107,11 +107,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **stake_pool_id** | **string**|  |
  **wallet_id** | **string**|  |
- **inline_object4** | [**\OpenAPI\Client\Model\InlineObject4**](../Model/InlineObject4.md)|  |
+ **inline_object4** | [**\melmccann\cardanowallet\Model\InlineObject4**](../Model/InlineObject4.md)|  |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\InlineResponse2002**](../Model/InlineResponse2002.md)
+[**\melmccann\cardanowallet\Model\InlineResponse2002**](../Model/InlineResponse2002.md)
 
 ### Authorization
 
@@ -142,7 +142,7 @@ List
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new OpenAPI\Client\Api\StakePoolsApi(
+$apiInstance = new melmccann\cardanowallet\Api\StakePoolsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -185,7 +185,7 @@ No authorization required
 
 ## quitStakePool
 
-> \OpenAPI\Client\Model\InlineResponse2002 quitStakePool($wallet_id, $inline_object5)
+> \melmccann\cardanowallet\Model\InlineResponse2002 quitStakePool($wallet_id, $inline_object5)
 
 Quit
 
@@ -198,13 +198,13 @@ Quit
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new OpenAPI\Client\Api\StakePoolsApi(
+$apiInstance = new melmccann\cardanowallet\Api\StakePoolsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $wallet_id = 'wallet_id_example'; // string | 
-$inline_object5 = new \OpenAPI\Client\Model\InlineObject5(); // \OpenAPI\Client\Model\InlineObject5 | 
+$inline_object5 = new \melmccann\cardanowallet\Model\InlineObject5(); // \melmccann\cardanowallet\Model\InlineObject5 | 
 
 try {
     $result = $apiInstance->quitStakePool($wallet_id, $inline_object5);
@@ -221,11 +221,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **wallet_id** | **string**|  |
- **inline_object5** | [**\OpenAPI\Client\Model\InlineObject5**](../Model/InlineObject5.md)|  |
+ **inline_object5** | [**\melmccann\cardanowallet\Model\InlineObject5**](../Model/InlineObject5.md)|  |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\InlineResponse2002**](../Model/InlineResponse2002.md)
+[**\melmccann\cardanowallet\Model\InlineResponse2002**](../Model/InlineResponse2002.md)
 
 ### Authorization
 
