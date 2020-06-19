@@ -1,4 +1,5 @@
 # OpenAPIClient-php
+## This is just for me building a Proof of Concept :-D Mel
 
 <p align=\"right\"><img style=\"position: relative; top: -10em; margin-bottom: -12em;\" width=\"20%\" src=\"https://cardanodocs.com/img/cardano.png\"></img></p>
 
